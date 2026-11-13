@@ -1,0 +1,1279 @@
+/* ==========================================================================
+   Addison Black — Portfolio stylesheet
+   --------------------------------------------------------------------------
+   Sections:
+   1.  Design tokens (colors, fonts, sizes)
+   2.  Reset & base elements
+   3.  Layout helpers (container, sections, visually-hidden)
+   4.  Typography (eyebrows, headings, lead text)
+   5.  Buttons & links
+   6.  Site header & navigation
+   7.  Hero
+   8.  Dashboard skeleton placeholder (hero card)
+   9.  Skills strip
+   10. Projects grid & cards
+   11. DAX Library (dark section) & code blocks
+   12. About & contact
+   13. Footer
+   14. Case study page
+   15. Media queries (tablet & mobile)
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. Design tokens
+   ========================================================================== */
+:root {
+  /* Brand palette */
+  --forest: #1E3B2F;       /* primary: text, buttons, dark sections */
+  --forest-deep: #162C23;  /* code block background on dark sections */
+  --sage: #7F8C6A;         /* decorative only: chart bars, borders (not for small text) */
+  --sage-dark: #4E5A3E;    /* small labels & secondary text on cream */
+  --sage-light: #A9B596;   /* VAR / RETURN keywords on dark backgrounds */
+  --tan: #C8B48A;          /* accent: buttons on dark, highlights, code functions */
+  --cream: #F5F0E6;        /* page background */
+  --sand: #EFE8DA;         /* slightly darker cream band (skills strip, pills) */
+  --card: #FBF8F1;         /* card background */
+  --line: #E2D9C6;         /* borders & dividers */
+  --body-text: #3A4A3C;    /* paragraph text */
+
+  /* Focus ring (overridden inside dark sections) */
+  --focus: var(--forest);
+
+  /* Fonts */
+  --font-heading: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Sizing */
+  --container: 1200px;
+  --gutter: 24px;
+  --radius-card: 16px;
+  --radius-btn: 8px;
+  --section-space: clamp(64px, 9vw, 120px);
+  --header-height: 72px;
+}
+
+
+/* ==========================================================================
+   2. Reset & base elements
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 16px); /* anchor links clear sticky header */
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--body-text);
+  font-family: var(--font-body);
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  color: var(--forest);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--forest);
+  text-underline-offset: 3px;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+
+/* ==========================================================================
+   3. Layout helpers
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--section-space);
+}
+
+/* Dark forest sections (DAX Library, Next project band) */
+.section--dark {
+  --focus: var(--tan);
+  background: var(--forest);
+  color: var(--cream);
+}
+
+.section--dark h2,
+.section--dark h3 {
+  color: var(--cream);
+}
+
+.section--dark a:not(.btn) {
+  color: var(--cream);
+}
+
+/* Hidden visually but still read by screen readers */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* "Skip to content" link, appears on keyboard focus */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 100;
+  padding: 10px 16px;
+  background: var(--forest);
+  color: var(--cream);
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Generic card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+}
+
+
+/* ==========================================================================
+   4. Typography
+   ========================================================================== */
+.eyebrow {
+  display: block;
+  margin: 0 0 14px;
+  color: var(--sage-dark);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.section--dark .eyebrow {
+  color: var(--tan);
+}
+
+.h1 {
+  font-size: clamp(2.375rem, 5.2vw, 3.75rem);
+  letter-spacing: -0.015em;
+}
+
+.h2 {
+  font-size: clamp(1.875rem, 3.6vw, 2.625rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.lead {
+  max-width: 34em;
+  font-size: 1.1875rem;
+  line-height: 1.6;
+}
+
+.section-header {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.muted {
+  color: var(--sage-dark);
+  font-size: 0.9375rem;
+}
+
+
+/* ==========================================================================
+   5. Buttons & links
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 22px;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-btn);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn--sm {
+  min-height: 40px;
+  padding: 8px 16px;
+  font-size: 0.9375rem;
+}
+
+/* Filled forest (light backgrounds) */
+.btn--primary {
+  background: var(--forest);
+  border-color: var(--forest);
+  color: var(--cream);
+}
+
+.btn--primary:hover {
+  background: #2A4E3F;
+  border-color: #2A4E3F;
+}
+
+/* Outlined forest (light backgrounds) */
+.btn--outline {
+  background: transparent;
+  border-color: var(--forest);
+  color: var(--forest);
+}
+
+.btn--outline:hover {
+  background: var(--forest);
+  color: var(--cream);
+}
+
+/* Tan (dark backgrounds) */
+.btn--tan {
+  background: var(--tan);
+  border-color: var(--tan);
+  color: var(--forest);
+}
+
+.btn--tan:hover {
+  background: #D6C59F;
+  border-color: #D6C59F;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Text link with arrow, e.g. "Read case study →" */
+.text-link {
+  color: var(--forest);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--sage);
+  text-decoration-thickness: 1.5px;
+}
+
+.text-link:hover {
+  text-decoration-color: var(--forest);
+}
+
+/* Icon + text link (GitHub, LinkedIn) */
+.icon-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.icon-text-link svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+
+/* ==========================================================================
+   6. Site header & navigation
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: var(--header-height);
+}
+
+.wordmark {
+  color: var(--forest);
+  font-family: var(--font-heading);
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-list a:not(.btn) {
+  color: var(--forest);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-list a:not(.btn):hover {
+  text-decoration: underline;
+}
+
+.nav-icon {
+  display: inline-flex;
+  padding: 6px;
+}
+
+.nav-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Mobile menu button (only shown on small screens when JS is running) */
+.menu-toggle {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 8px 14px;
+  background: transparent;
+  border: 1.5px solid var(--forest);
+  border-radius: var(--radius-btn);
+  color: var(--forest);
+  font: 600 0.9375rem/1 var(--font-body);
+  cursor: pointer;
+}
+
+.menu-toggle__bars,
+.menu-toggle__bars::before,
+.menu-toggle__bars::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+}
+
+.menu-toggle__bars {
+  position: relative;
+}
+
+.menu-toggle__bars::before,
+.menu-toggle__bars::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.menu-toggle__bars::before { top: -6px; }
+.menu-toggle__bars::after  { top: 6px; }
+
+/* Turn the bars into an X when open */
+.menu-toggle[aria-expanded="true"] .menu-toggle__bars { background: transparent; }
+.menu-toggle[aria-expanded="true"] .menu-toggle__bars::before { top: 0; transform: rotate(45deg); }
+.menu-toggle[aria-expanded="true"] .menu-toggle__bars::after  { top: 0; transform: rotate(-45deg); }
+
+
+/* ==========================================================================
+   7. Hero
+   ========================================================================== */
+.hero {
+  padding-block: clamp(48px, 7vw, 96px) var(--section-space);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: clamp(40px, 6vw, 80px);
+}
+
+.hero h1 {
+  margin-bottom: 24px;
+}
+
+.hero .lead {
+  margin-bottom: 32px;
+}
+
+
+/* ==========================================================================
+   8. Dashboard skeleton placeholder (hero card)
+   ========================================================================== */
+.hero-figure {
+  margin: 0;
+  padding: 16px;
+}
+
+.hero-figure svg,
+.hero-figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.figure-caption {
+  margin-top: 12px;
+  color: var(--sage-dark);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+
+/* ==========================================================================
+   9. Skills strip
+   ========================================================================== */
+.skills {
+  padding-block: 28px;
+  background: var(--sand);
+  border-block: 1px solid var(--line);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 36px;
+  list-style: none;
+}
+
+.skills-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--forest);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Small sage marker before each item (works cleanly when the row wraps) */
+.skills-list li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--sage);
+  border-radius: 50%;
+}
+
+
+/* ==========================================================================
+   10. Projects grid & cards
+   ========================================================================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  list-style: none;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px 24px 28px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card__question {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--sage-dark);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.project-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: auto; /* pin links to bottom so cards line up */
+  font-size: 0.9375rem;
+}
+
+/* ---- Thumbnails (CSS chart placeholders) ----
+   Replace each .thumb <div> with:
+   <img class="thumb" src="assets/img/your-image.png" alt="Describe the dashboard">  */
+.thumb {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  border-bottom: 1px solid var(--line);
+  object-fit: cover;
+}
+
+.thumb__label {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* Thumb 1: vertical bars on forest */
+.thumb--bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8%;
+  padding: 18% 10% 10%;
+  background: var(--forest);
+}
+
+.thumb--bars .thumb__label { color: var(--cream); }
+
+.thumb--bars span:not(.thumb__label) {
+  flex: 1;
+  background: var(--sage);
+  border-radius: 3px 3px 0 0;
+}
+
+.thumb--bars span:not(.thumb__label):nth-child(odd) { background: var(--tan); }
+
+/* Thumb 2: cohort heat grid on sand */
+.thumb--cohort {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+  padding: 18% 9% 8%;
+  background: var(--sand);
+}
+
+.thumb--cohort .thumb__label { color: var(--sage-dark); }
+
+.thumb--cohort span:not(.thumb__label) {
+  background: var(--forest);
+  border-radius: 2px;
+}
+
+/* Thumb 3: horizontal bars on tan tint */
+.thumb--hbars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9%;
+  padding: 14% 10% 6%;
+  background: #EAE0CB;
+}
+
+.thumb--hbars .thumb__label { color: var(--forest); }
+
+.thumb--hbars span:not(.thumb__label) {
+  height: 11%;
+  background: var(--sage);
+  border-radius: 0 3px 3px 0;
+}
+
+.thumb--hbars span.is-alert { background: var(--forest); }
+
+
+/* ==========================================================================
+   11. DAX Library (dark section) & code blocks
+   ========================================================================== */
+.dax-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(40px, 6vw, 80px);
+}
+
+.dax-grid .h2 {
+  margin-bottom: 20px;
+}
+
+.dax-grid p {
+  max-width: 30em;
+  margin-bottom: 32px;
+  color: #DCE3D6;
+}
+
+/* Code block (used on dark backgrounds) */
+.code-block {
+  margin: 0;
+  overflow: hidden;
+  background: var(--forest-deep);
+  border: 1px solid #2E4A3D;
+  border-radius: var(--radius-card);
+}
+
+.code-block__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #2E4A3D;
+  color: var(--sage-light);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 24px 20px 28px;
+  overflow-x: auto; /* long lines scroll inside the block, not the page */
+  color: #EEE9DD;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  tab-size: 4;
+}
+
+/* Syntax colors */
+.tok-fn { color: var(--tan); }        /* DAX functions */
+.tok-kw { color: var(--sage-light); } /* VAR / RETURN */
+.tok-name { color: #FFFFFF; font-weight: 600; } /* measure name */
+
+
+/* ==========================================================================
+   12. About & contact
+   ========================================================================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(40px, 6vw, 96px);
+}
+
+.about-grid .h2 {
+  margin-bottom: 24px;
+}
+
+.contact-card {
+  padding: clamp(28px, 4vw, 40px);
+}
+
+.contact-card .h3 {
+  margin-bottom: 10px;
+}
+
+.contact-card > p {
+  margin-bottom: 24px;
+}
+
+.contact-card .btn {
+  width: 100%;
+}
+
+.contact-card .btn + .btn {
+  margin-top: 12px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+
+/* ==========================================================================
+   13. Footer
+   ========================================================================== */
+.site-footer {
+  padding-block: 32px;
+  border-top: 1px solid var(--line);
+  color: var(--sage-dark);
+  font-size: 0.9375rem;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: var(--sage-dark);
+}
+
+
+/* ==========================================================================
+   14. Case study page
+   ========================================================================== */
+.cs-intro {
+  padding-block: clamp(40px, 6vw, 72px) 40px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 32px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.cs-intro h1 {
+  margin-bottom: 20px;
+}
+
+/* ---- Metadata row (<dl>) ---- */
+.meta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 40px 0 0;
+  border-block: 1px solid var(--line);
+}
+
+.meta > div {
+  padding: 20px 24px 20px 0;
+}
+
+.meta > div + div {
+  padding-left: 24px;
+  border-left: 1px solid var(--line);
+}
+
+.meta dt {
+  margin-bottom: 6px;
+  color: var(--sage-dark);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.meta dd {
+  margin: 0;
+  color: var(--forest);
+  font-size: 0.9375rem;
+}
+
+/* ---- 16:9 media placeholders ---- */
+.media-figure {
+  margin: 0;
+}
+
+.media-placeholder {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  padding: 24px;
+  background: var(--sand);
+  border: 1px dashed var(--sage);
+  border-radius: var(--radius-card);
+  color: var(--sage-dark);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.media-figure img,
+.media-figure iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+}
+
+.media-placeholder--video {
+  background: var(--forest);
+  border: 0;
+  color: #DCE3D6;
+}
+
+.play-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 14px;
+}
+
+/* ---- Two-column content sections ---- */
+.cs-body {
+  padding-block: 24px var(--section-space);
+}
+
+.cs-section {
+  display: grid;
+  grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+  gap: 24px 64px;
+  padding-block: 56px;
+  border-top: 1px solid var(--line);
+}
+
+.cs-section:first-child {
+  border-top: 0;
+}
+
+.cs-section__content {
+  max-width: 760px;
+}
+
+.cs-section__content > * + * {
+  margin-top: 20px;
+}
+
+.cs-section__content h3 {
+  margin-bottom: 4px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Definition-style list for "The question" */
+.qa-list {
+  margin: 0;
+}
+
+.qa-list dt {
+  color: var(--forest);
+  font-weight: 600;
+}
+
+.qa-list dd {
+  margin: 4px 0 20px;
+}
+
+/* ---- Numbered steps with tan badges ---- */
+.steps {
+  counter-reset: step;
+  list-style: none;
+}
+
+.steps li {
+  position: relative;
+  min-height: 36px;
+  padding-left: 56px;
+  counter-increment: step;
+}
+
+.steps li + li {
+  margin-top: 20px;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  top: -2px;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: var(--tan);
+  border-radius: 50%;
+  color: var(--forest);
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+/* ---- Star schema diagram ---- */
+.schema {
+  margin: 0;
+  padding: 28px;
+}
+
+.schema__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas:
+    ".       date     ."
+    "product fact     store"
+    ".       customer .";
+  gap: 28px 20px;
+  max-width: 560px;
+  margin-inline: auto;
+}
+
+/* Connector lines: a cross through the center, hidden behind the boxes */
+.schema__grid::before,
+.schema__grid::after {
+  content: "";
+  position: absolute;
+  background: var(--sage);
+}
+
+.schema__grid::before { /* vertical */
+  top: 16%;
+  bottom: 16%;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+}
+
+.schema__grid::after { /* horizontal */
+  top: 50%;
+  left: 16%;
+  right: 16%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.schema__table {
+  position: relative;
+  z-index: 1;
+  padding: 14px 10px;
+  background: var(--card);
+  border: 1.5px solid var(--sage);
+  border-radius: 10px;
+  color: var(--forest);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.schema__table--fact {
+  grid-area: fact;
+  background: var(--forest);
+  border-color: var(--forest);
+  color: var(--cream);
+}
+
+.schema__table--date     { grid-area: date; }
+.schema__table--product  { grid-area: product; }
+.schema__table--store    { grid-area: store; }
+.schema__table--customer { grid-area: customer; }
+
+.schema figcaption {
+  margin-top: 20px;
+}
+
+/* Light-background version of the code block on the case study page
+   is still dark, matching the home page. */
+.code-block--inline pre {
+  font-size: 0.9375rem;
+}
+
+/* ---- Insight cards ---- */
+.insights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+}
+
+.insight {
+  padding: 24px;
+}
+
+.insight__stat {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--forest);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.insight p {
+  font-size: 0.9375rem;
+}
+
+/* ---- Next project band ---- */
+.next-project {
+  padding-block: clamp(56px, 8vw, 96px);
+}
+
+.next-project__link {
+  display: inline-block;
+  color: var(--cream);
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.next-project__link span {
+  color: var(--tan);
+}
+
+.next-project__link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+
+/* ==========================================================================
+   15. Media queries
+   ========================================================================== */
+
+/* ---- Tablet & below (≤ 960px) ---- */
+@media (max-width: 960px) {
+  .hero-grid,
+  .dax-grid,
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .meta > div:nth-child(3) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .meta > div:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+
+  .cs-section {
+    grid-template-columns: minmax(0, 1fr);
+    padding-block: 44px;
+  }
+
+  .insights {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ---- Mobile navigation (≤ 860px) ----
+   Only collapses when JS is running (html.js), so the links
+   remain usable if JavaScript is disabled. */
+@media (max-width: 860px) {
+  .js .menu-toggle {
+    display: inline-flex;
+  }
+
+  .js .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 8px var(--gutter) 24px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .js .site-nav.is-open {
+    display: block;
+  }
+
+  .js .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .js .nav-list li {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .js .nav-list li:last-child {
+    padding-top: 16px;
+    border-bottom: 0;
+  }
+
+  .js .nav-list a:not(.btn) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 0;
+    font-size: 1.0625rem;
+  }
+
+  .js .nav-list .btn {
+    width: 100%;
+  }
+
+  /* Show "GitHub" text next to the icon inside the open menu */
+  .js .nav-icon .nav-icon__text {
+    position: static !important;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* No-JS fallback: let the nav wrap below the wordmark */
+  html:not(.js) .header-inner {
+    flex-wrap: wrap;
+    padding-block: 12px;
+  }
+
+  html:not(.js) .nav-list {
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+}
+
+/* ---- Mobile (≤ 640px) ---- */
+@media (max-width: 640px) {
+  :root {
+    --gutter: 16px;
+    --header-height: 64px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  .lead {
+    font-size: 1.0625rem;
+  }
+
+  .projects-grid,
+  .insights,
+  .meta {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .meta > div,
+  .meta > div + div {
+    padding: 16px 0;
+    border-left: 0;
+  }
+
+  .meta > div + div {
+    border-top: 1px solid var(--line);
+  }
+
+  .btn-row .btn {
+    flex: 1 1 100%;
+  }
+
+  .skills-list {
+    justify-content: flex-start;
+    gap: 10px 24px;
+  }
+
+  .code-block pre {
+    padding: 20px 16px 24px;
+    font-size: 0.8125rem;
+  }
+
+  .hero-figure {
+    padding: 10px;
+  }
+
+  .schema {
+    padding: 20px 14px;
+  }
+
+  .schema__grid {
+    gap: 22px 10px;
+  }
+
+  .schema__table {
+    padding: 12px 4px;
+    font-size: 0.8125rem;
+  }
+
+  .play-icon {
+    width: 56px;
+    height: 56px;
+  }
+}
