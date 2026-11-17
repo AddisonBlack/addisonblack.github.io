@@ -1,0 +1,3 @@
+# Source files that should not be published on the site
+*.docx
+.DS_Store

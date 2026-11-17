@@ -1,0 +1,32 @@
+SalespersonID,SalespersonName,Email,BusinessUnitID,Title,HireDate,TerminationDate,Status
+901249,Hunter Chen,hunter.chen@contoso.com,1003,Comfort Advisor,2017-04-03,2026-10-14,Inactive
+902647,Colton Hunter,colton.hunter@contoso.com,1005,Plumbing Sales Advisor,2020-10-02,,Active
+912756,Christopher King,christopher.king@contoso.com,1003,Comfort Advisor,2025-10-12,,Active
+913479,Ryan Hudson,ryan.hudson@contoso.com,1003,Comfort Advisor,2021-10-01,,Active
+913930,Alan Dixon,alan.dixon@contoso.com,1005,Plumbing Sales Advisor,2016-01-03,,Active
+917891,Lucas Robinson,lucas.robinson@contoso.com,1003,Comfort Advisor,2025-07-14,,Active
+918697,Ronald Ford,ronald.ford@contoso.com,1003,Comfort Advisor,2015-05-01,,Active
+920317,Richard Lewis,richard.lewis@contoso.com,1003,Comfort Advisor,2026-05-13,,Active
+921530,Shane Gutierrez,shane.gutierrez@contoso.com,1003,Comfort Advisor,2026-10-17,,Active
+922322,Mark Hill,mark.hill@contoso.com,1003,Comfort Advisor,2025-03-12,,Active
+930901,Melissa Martin,melissa.martin@contoso.com,1003,Comfort Advisor,2017-12-04,,Active
+932899,Nancy Walker,nancy.walker@contoso.com,1003,Comfort Advisor,2021-10-01,,Active
+935007,Richard Hoffman,richard.hoffman@contoso.com,1003,Comfort Advisor,2020-11-30,,Active
+935544,Olivia Wells,olivia.wells@contoso.com,1006,Electrical Sales Advisor,2021-05-21,,Active
+936423,Alan Stewart,alan.stewart@contoso.com,1003,Comfort Advisor,2021-09-22,,Active
+937630,Brittany Soto,brittany.soto@contoso.com,1003,Comfort Advisor,2019-09-18,,Active
+945058,Brandon West,brandon.west@contoso.com,1003,Comfort Advisor,2014-03-01,2025-03-26,Inactive
+945761,Colton Dunn,colton.dunn@contoso.com,1005,Plumbing Sales Advisor,2020-10-31,,Active
+946406,Paul Cook,paul.cook@contoso.com,1003,Comfort Advisor,2020-09-26,,Active
+947093,Jacqueline Weaver,jacqueline.weaver@contoso.com,1003,Comfort Advisor,2017-03-11,,Active
+947359,Cynthia Fernandez,cynthia.fernandez@contoso.com,1003,Comfort Advisor,2025-01-07,2025-10-08,Inactive
+949596,Rachel Hamilton,rachel.hamilton@contoso.com,1003,Comfort Advisor,2024-10-28,2025-07-26,Inactive
+949765,Madison Dunn,madison.dunn@contoso.com,1006,Electrical Sales Advisor,2024-01-02,,Active
+952056,Matthew Woods,matthew.woods@contoso.com,1006,Electrical Sales Advisor,2015-07-08,,Active
+952183,Brian Cruz,brian.cruz@contoso.com,1005,Plumbing Sales Advisor,2014-10-05,,Active
+953044,Eric Nelson,eric.nelson@contoso.com,1005,Plumbing Sales Advisor,2025-01-26,,Active
+964890,Kyle Johnston,kyle.johnston@contoso.com,1006,Electrical Sales Advisor,2015-03-13,,Active
+976800,Kyle Russell,kyle.russell@contoso.com,1003,Comfort Advisor,2023-12-09,,Active
+976966,Jack Carter,jack.carter@contoso.com,1003,Comfort Advisor,2019-01-16,,Active
+984349,Frank Patel,frank.patel@contoso.com,1005,Plumbing Sales Advisor,2015-03-17,,Active
+992247,Anthony Hall,anthony.hall@contoso.com,1003,Comfort Advisor,2024-01-14,2026-05-26,Inactive

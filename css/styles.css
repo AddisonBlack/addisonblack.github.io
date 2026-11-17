@@ -13,6 +13,7 @@
    9.  Skills strip
    10. Projects grid & cards
    11. DAX Library (dark section) & code blocks
+   11b. iOS apps (side projects)
    12. About & contact
    13. Footer
    14. Case study page
@@ -33,6 +34,8 @@
   --tan: #C8B48A;          /* accent: buttons on dark, highlights, code functions */
   --cream: #F5F0E6;        /* page background */
   --sand: #EFE8DA;         /* slightly darker cream band (skills strip, pills) */
+  --sage-tint: #DFE4D3;    /* light sage background (iOS apps section) */
+  --sage-tint-line: #CBD3BC; /* borders on the sage-tint background */
   --card: #FBF8F1;         /* card background */
   --line: #E2D9C6;         /* borders & dividers */
   --body-text: #3A4A3C;    /* paragraph text */
@@ -611,26 +614,44 @@ code, pre {
   letter-spacing: 0.04em;
 }
 
-/* Thumb 1: vertical bars on forest */
-.thumb--bars {
+/* Leaderboard thumb: ranked bars on forest (a TV screen) */
+.thumb--leaderboard {
   display: flex;
-  align-items: flex-end;
-  gap: 8%;
-  padding: 18% 10% 10%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7%;
+  padding: 16% 10% 7% 18%;
   background: var(--forest);
+  counter-reset: rank;
 }
 
-.thumb--bars .thumb__label { color: var(--cream); }
+.thumb--leaderboard .thumb__label { color: var(--cream); }
 
-.thumb--bars span:not(.thumb__label) {
-  flex: 1;
+.thumb--leaderboard span:not(.thumb__label) {
+  position: relative;
+  height: 10%;
   background: var(--sage);
-  border-radius: 3px 3px 0 0;
+  border-radius: 0 3px 3px 0;
+  counter-increment: rank;
 }
 
-.thumb--bars span:not(.thumb__label):nth-child(odd) { background: var(--tan); }
+.thumb--leaderboard span.is-top { background: var(--tan); }
 
-/* Thumb 2: cohort heat grid on sand */
+/* Rank number to the left of each bar */
+.thumb--leaderboard span:not(.thumb__label)::before {
+  content: counter(rank);
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 10px);
+  color: var(--cream);
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+/* Cohort thumb: heat grid on sand */
 .thumb--cohort {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -646,7 +667,7 @@ code, pre {
   border-radius: 2px;
 }
 
-/* Thumb 3: horizontal bars on tan tint */
+/* Payroll thumb: horizontal bars on tan tint */
 .thumb--hbars {
   display: flex;
   flex-direction: column;
@@ -724,6 +745,72 @@ code, pre {
 
 
 /* ==========================================================================
+   11b. iOS apps (side projects)
+   ========================================================================== */
+.section--sage {
+  background: var(--sage-tint);
+  border-block: 1px solid var(--sage-tint-line);
+}
+
+.section--sage .card {
+  border-color: var(--sage-tint-line);
+}
+
+.apps-intro {
+  margin-top: 16px;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  list-style: none;
+}
+
+.app-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  height: 100%;
+  padding: 28px;
+}
+
+.app-card__icon {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--line);
+  border-radius: 16px; /* iOS-style rounded icon */
+}
+
+.app-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-card__meta {
+  margin: 4px 0 14px;
+  color: var(--sage-dark);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.app-card__body > p:not(.app-card__meta) {
+  font-size: 1rem;
+}
+
+.app-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+
+/* ==========================================================================
    12. About & contact
    ========================================================================== */
 .about-grid {
@@ -735,6 +822,55 @@ code, pre {
 
 .about-grid .h2 {
   margin-bottom: 24px;
+}
+
+/* Certifications list */
+.about-subhead {
+  margin: 32px 0 14px;
+  color: var(--sage-dark);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cert-list {
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.cert-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--forest);
+  font-weight: 500;
+}
+
+.cert-list a {
+  color: var(--forest);
+  text-decoration: underline;
+  text-decoration-color: var(--sage);
+  text-decoration-thickness: 1.5px;
+}
+
+.cert-list a:hover {
+  text-decoration-color: var(--forest);
+}
+
+.cert-code {
+  flex-shrink: 0;
+  min-width: 72px;
+  padding: 2px 8px;
+  background: var(--forest);
+  border-radius: 6px;
+  color: var(--cream);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  text-align: center;
 }
 
 .contact-card {
@@ -815,6 +951,18 @@ code, pre {
 
 .cs-intro h1 {
   margin-bottom: 20px;
+}
+
+/* Note under the summary, e.g. "Rebuilt on synthetic data" */
+.cs-note {
+  max-width: 46em;
+  margin-top: 20px;
+  padding: 14px 18px;
+  background: var(--sand);
+  border-left: 3px solid var(--sage);
+  border-radius: 0 var(--radius-btn) var(--radius-btn) 0;
+  color: var(--sage-dark);
+  font-size: 0.9375rem;
 }
 
 /* ---- Metadata row (<dl>) ---- */
@@ -1229,6 +1377,22 @@ code, pre {
   .insights,
   .meta {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .apps-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .app-card {
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px;
+  }
+
+  .app-card__icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
   }
 
   .meta > div,

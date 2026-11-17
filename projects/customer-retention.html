@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- TEMPLATE: to make a new case study, copy this file, then update every
+       [bracketed] item, the <title>, meta tags, and the "Next project" link. -->
+  <title>Customer Retention Cohorts | Addison Black</title>
+  <meta name="description" content="Case study: a Power BI cohort analysis showing when customers stop coming back, built on a public retail dataset.">
+  <link rel="canonical" href="https://addisonblack.github.io/projects/customer-retention.html">
+
+  <!-- Open Graph / social sharing previews -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Addison Black">
+  <meta property="og:title" content="Customer Retention Cohorts | Addison Black">
+  <meta property="og:description" content="A Power BI cohort analysis of customer retention, built on public data.">
+  <meta property="og:url" content="https://addisonblack.github.io/projects/customer-retention.html">
+  <meta property="og:image" content="https://addisonblack.github.io/assets/img/[customer-retention-og-1200x630].png">
+  <meta property="og:image:alt" content="[Describe the preview image]">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== Header ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="../index.html">Addison Black</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#dax">DAX Library</a></li>
+          <li><a href="../index.html#apps">Apps</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li>
+            <a class="nav-icon" href="https://github.com/AddisonBlack" aria-label="GitHub (opens in a new tab)" target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              <span class="nav-icon__text visually-hidden">GitHub</span>
+            </a>
+          </li>
+          <li><a class="btn btn--primary btn--sm" href="../assets/Addison_Black_Resume.pdf" target="_blank" rel="noopener">Resume<span class="visually-hidden"> (PDF, opens in a new tab)</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== Intro ===================== -->
+    <section class="cs-intro" aria-labelledby="cs-title">
+      <div class="container">
+        <a class="back-link" href="../index.html#projects">← All projects</a>
+        <p class="eyebrow">Case study</p>
+        <h1 id="cs-title" class="h1">Customer Retention Cohorts</h1>
+        <p class="lead">
+          Getting a new customer usually costs more than keeping one. This report groups customers by the month of their first purchase and tracks how many come back in each month after, showing when customers drop off and which cohorts hold on longest. [Add the single most useful thing the report revealed.]
+        </p>
+
+        <dl class="meta">
+          <div>
+            <dt>Tools</dt>
+            <dd>Power BI, Power Query, DAX, Field parameters</dd>
+          </div>
+          <div>
+            <dt>Data</dt>
+            <dd><a href="https://github.com/AddisonBlack/addisonblack.github.io/tree/main/data" target="_blank" rel="noopener">Synthetic HVAC company dataset<span class="visually-hidden"> (opens in a new tab)</span></a>, shaped like ServiceTitan and QuickBooks exports</dd>
+          </div>
+          <div>
+            <dt>Role</dt>
+            <dd>Solo project: data prep, modeling, report design</dd>
+          </div>
+          <div>
+            <dt>Links</dt>
+            <dd><a href="https://github.com/AddisonBlack/[customer-retention-repo]" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
+              ·
+              <a href="#walkthrough">Video walkthrough</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== Full dashboard screenshot ===================== -->
+    <div class="container">
+      <!-- Replace the placeholder <div> with:
+           <img src="../assets/img/customer-retention-full.png" alt="[Describe the full report page]" width="1920" height="1080"> -->
+      <figure class="media-figure">
+        <div class="media-placeholder">[Full report screenshot, 16:9, e.g. 1920 × 1080]</div>
+        <figcaption class="figure-caption">[Caption, e.g. "Cohort retention matrix, with a field parameter to switch between customers and revenue."]</figcaption>
+      </figure>
+    </div>
+
+    <!-- ===================== Content sections ===================== -->
+    <div class="container cs-body">
+
+      <section class="cs-section" aria-labelledby="q-title">
+        <div>
+          <p class="eyebrow">01</p>
+          <h2 id="q-title" class="h3">The question</h2>
+        </div>
+        <div class="cs-section__content">
+          <dl class="qa-list">
+            <dt>Audience</dt>
+            <dd>[Who this report is for, e.g. an e-commerce marketing or customer success team.]</dd>
+            <dt>The decision</dt>
+            <dd>[What it supports, e.g. when to send win-back offers, and which customers to focus on.]</dd>
+            <dt>What "done" looked like</dt>
+            <dd>[How you knew it worked, e.g. anyone can read off month-3 retention for any cohort in seconds.]</dd>
+          </dl>
+        </div>
+      </section>
+      <section class="cs-section" aria-labelledby="prep-title">
+        <div>
+          <p class="eyebrow">02</p>
+          <h2 id="prep-title" class="h3">Data prep</h2>
+        </div>
+        <div class="cs-section__content">
+          <ol class="steps">
+            <li>[Step 1, e.g. Removed cancelled orders and rows without a customer ID.]</li>
+            <li>[Step 2, e.g. Found each customer's first purchase month in Power Query.]</li>
+            <li>Added a "months since first purchase" column, which turns every transaction into a cohort position.</li>
+          </ol>
+        </div>
+      </section>
+      <section class="cs-section" aria-labelledby="model-title">
+        <div>
+          <p class="eyebrow">03</p>
+          <h2 id="model-title" class="h3">Data model</h2>
+        </div>
+        <div class="cs-section__content">
+          <p>
+            A star schema with transactions at the center. The cohort columns (first purchase month
+            and months since first purchase) sit on the fact table, so a matrix can put cohorts on
+            rows and months on columns without extra relationships. [Add anything specific to your model.]
+          </p>
+          <!-- [Replace this diagram with a screenshot of your real model view:
+               <img src="../assets/img/[model-screenshot].png" alt="Power BI model view showing the star schema"> ] -->
+          <figure class="card schema">
+            <div class="schema__grid">
+              <div class="schema__table schema__table--date">Dim Date</div>
+              <div class="schema__table schema__table--product">Dim Customer</div>
+              <div class="schema__table schema__table--fact">Fact Sales</div>
+              <div class="schema__table schema__table--store">Dim Job Type</div>
+              <div class="schema__table schema__table--customer">Dim Business Unit</div>
+            </div>
+            <figcaption class="muted">Star schema with Fact Sales at the center. [Replace with a screenshot of your model view.]</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="cs-section" aria-labelledby="measures-title">
+        <div>
+          <p class="eyebrow">04</p>
+          <h2 id="measures-title" class="h3">Key measures</h2>
+        </div>
+        <div class="cs-section__content">
+          <figure class="code-block">
+            <figcaption class="code-block__bar">
+              <span>Retention %</span>
+              <span>DAX</span>
+            </figcaption>
+<pre tabindex="0" aria-label="DAX: Retention %"><code><span class="tok-name">Retention %</span> =
+<span class="tok-kw">VAR</span> ActiveCustomers =
+    <span class="tok-fn">DISTINCTCOUNT</span> ( 'Fact Sales'[Customer ID] )
+<span class="tok-kw">VAR</span> CohortSize =
+    <span class="tok-fn">CALCULATE</span> (
+        <span class="tok-fn">DISTINCTCOUNT</span> ( 'Fact Sales'[Customer ID] ),
+        'Fact Sales'[Months Since First Purchase] = 0
+    )
+<span class="tok-kw">RETURN</span>
+    <span class="tok-fn">DIVIDE</span> ( ActiveCustomers, CohortSize )</code></pre>
+          </figure>
+          <p>
+            In the cohort matrix, each cell counts the customers who bought that month, then divides
+            by the cohort's size in its first month. The CALCULATE filter replaces the "months since"
+            column but keeps the cohort row, so every cell is compared with its own starting point.
+            [Adjust to match your real measure.]
+          </p>
+        </div>
+      </section>
+      <section class="cs-section" aria-labelledby="insights-title">
+        <div>
+          <p class="eyebrow">05</p>
+          <h2 id="insights-title" class="h3">What the data showed</h2>
+        </div>
+        <div class="cs-section__content">
+          <ul class="insights">
+            <li class="card insight">
+              <span class="insight__stat">[Stat]</span>
+              <p>[Finding, e.g. Most customers who leave do it after their first order.]</p>
+            </li>
+            <li class="card insight">
+              <span class="insight__stat">[Stat]</span>
+              <p>[Finding]</p>
+            </li>
+            <li class="card insight">
+              <span class="insight__stat">[Stat]</span>
+              <p>[Finding]</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="walkthrough" class="cs-section" aria-labelledby="walkthrough-title">
+        <div>
+          <p class="eyebrow">06</p>
+          <h2 id="walkthrough-title" class="h3">Walkthrough</h2>
+        </div>
+        <div class="cs-section__content">
+          <!-- Replace the placeholder <div> with your video, e.g. a YouTube embed:
+               <iframe src="https://www.youtube-nocookie.com/embed/[VIDEO_ID]"
+                       title="Customer Retention Cohorts walkthrough"
+                       allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                       allowfullscreen loading="lazy"></iframe> -->
+          <figure class="media-figure">
+            <div class="media-placeholder media-placeholder--video">
+              <div>
+                <svg class="play-icon" viewBox="0 0 72 72" aria-hidden="true" focusable="false">
+                  <circle cx="36" cy="36" r="35" fill="#C8B48A"/>
+                  <path d="M29 23.5v25l20-12.5z" fill="#1E3B2F"/>
+                </svg>
+                <span>[Embedded video walkthrough, 2–3 minutes]</span>
+              </div>
+            </div>
+            <figcaption class="figure-caption">[Caption: what the walkthrough covers.]</figcaption>
+          </figure>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ===================== Next project ===================== -->
+    <section class="section--dark next-project" aria-labelledby="next-title">
+      <div class="container">
+        <h2 id="next-title" class="eyebrow">Next project</h2>
+        <a class="next-project__link" href="technician-payroll.html">Technician Payroll &amp; Performance <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Addison Black</p>
+      <p>Built with <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

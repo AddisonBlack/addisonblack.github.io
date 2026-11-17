@@ -9,19 +9,20 @@ Live site: https://addisonblack.github.io/
 
 ```
 index.html                 Home page (hero, skills, projects, DAX library, about, contact)
-projects/retail-sales.html Case study page; copy it as a template for new projects
+projects/*.html            Case study pages (technician-payroll, sales-leaderboard,
+                           customer-retention); copy one as a template for new projects
 css/styles.css             The one shared stylesheet (colors are CSS variables at the top)
 js/main.js                 Mobile menu toggle
 assets/img/                Dashboard screenshots, thumbnails, social preview image
-assets/resume.pdf          Your resume (add this file; the Resume buttons link to it)
+assets/Addison_Black_Resume.pdf  Resume (exported from the .docx; replace this file to update it)
 .nojekyll                  Tells GitHub Pages to serve files as-is
 ```
 
 ## Finding placeholders
 
 Everything that needs your real content is wrapped in `[square brackets]`.
-Search the project for `[` to find them all, including links like
-`mailto:[your-email@example.com]` and `https://github.com/AddisonBlack/[retail-sales-repo]`.
+Search the project for `[` to find them all, including the project repo links
+(e.g. `https://github.com/AddisonBlack/[technician-payroll-repo]`) and the `og:image` URLs.
 
 ## Previewing locally
 
@@ -35,12 +36,13 @@ then visit http://localhost:8000.
 
 ## Adding a new project
 
-1. Copy `projects/retail-sales.html` to a new file, e.g. `projects/customer-retention.html`.
+1. Copy one of the pages in `projects/` to a new file, e.g. `projects/new-project.html`.
 2. In the new file, update the `<title>`, the meta description, the Open Graph tags
    (`og:title`, `og:description`, `og:url`, `og:image`), the H1, and every `[bracketed]` item.
 3. Put screenshots in `assets/img/` and swap the placeholder `<div>`s for `<img>` tags.
    Each placeholder has a comment showing the exact `<img>` to use. Always write useful `alt` text.
-4. Update the "Next project" link at the bottom of the page.
+4. Update the "Next project" link at the bottom of the page, and on the page before it,
+   so the case studies keep linking in a loop.
 5. In `index.html`, point that project card's "Read case study →" link at the new page,
    and replace its CSS thumbnail with `<img class="thumb" src="assets/img/..." alt="...">`.
 6. To add a fourth card, copy one `<li>…</li>` block in the projects grid.

@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Addison Black">
   <meta property="og:title" content="Addison Black | Power BI Developer &amp; Data Analyst">
-  <meta property="og:description" content="[I turn messy data into reports people actually use. Short description for link previews.]">
+  <meta property="og:description" content="[From manual spreadsheets to reports that run themselves. Short description for link previews.]">
   <meta property="og:url" content="https://addisonblack.github.io/">
   <meta property="og:image" content="https://addisonblack.github.io/assets/img/[og-image-1200x630].png">
   <meta property="og:image:alt" content="[Describe the preview image]">
@@ -43,14 +43,15 @@
         <ul class="nav-list">
           <li><a href="#projects">Projects</a></li>
           <li><a href="#dax">DAX Library</a></li>
+          <li><a href="#apps">Apps</a></li>
           <li><a href="#about">About</a></li>
           <li>
-            <a class="nav-icon" href="https://github.com/AddisonBlack" aria-label="GitHub">
+            <a class="nav-icon" href="https://github.com/AddisonBlack" aria-label="GitHub (opens in a new tab)" target="_blank" rel="noopener">
               <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
               <span class="nav-icon__text visually-hidden">GitHub</span>
             </a>
           </li>
-          <li><a class="btn btn--primary btn--sm" href="assets/resume.pdf">Resume</a></li>
+          <li><a class="btn btn--primary btn--sm" href="assets/Addison_Black_Resume.pdf" target="_blank" rel="noopener">Resume<span class="visually-hidden"> (PDF, opens in a new tab)</span></a></li>
         </ul>
       </nav>
     </div>
@@ -63,15 +64,17 @@
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">Power BI Developer · Data Analyst</p>
-          <h1 id="hero-title" class="h1">I turn messy data into reports people actually use.</h1>
+          <h1 id="hero-title" class="h1">From manual spreadsheets to reports that run themselves.</h1>
           <p class="lead">
             I design Power BI models and reports that answer real business questions, from the
             first Power Query step to the last DAX measure.
-            [One sentence about your background, e.g. "I spent five years in retail finance before moving into BI full time."]
+            Over four years at a Power BI consultancy, I've automated payroll tracking for a field
+            service company with 200+ technicians and turned a manual sales report into a live
+            leaderboard on the office TVs.
           </p>
           <div class="btn-row">
             <a class="btn btn--primary" href="#projects">View projects</a>
-            <a class="btn btn--outline" href="assets/resume.pdf" download>Download resume</a>
+            <a class="btn btn--outline" href="assets/Addison_Black_Resume.pdf" download="Addison_Black_Resume.pdf">Download resume</a>
           </div>
         </div>
 
@@ -161,23 +164,26 @@
           <!-- Project 1 -->
           <li>
             <article class="card project-card">
-              <!-- [Replace with <img class="thumb" src="assets/img/retail-sales-thumb.png" alt="Retail Sales Performance dashboard overview">] -->
-              <div class="thumb thumb--bars" aria-hidden="true">
+              <!-- [Replace with <img class="thumb" src="assets/img/technician-payroll-thumb.png" alt="Technician payroll report overview">] -->
+              <div class="thumb thumb--hbars" aria-hidden="true">
                 <span class="thumb__label">[Screenshot]</span>
-                <span style="height:45%"></span><span style="height:62%"></span><span style="height:52%"></span>
-                <span style="height:78%"></span><span style="height:66%"></span><span style="height:92%"></span>
+                <span style="width:82%"></span>
+                <span style="width:64%" class="is-alert"></span>
+                <span style="width:90%"></span>
+                <span style="width:38%" class="is-alert"></span>
+                <span style="width:56%"></span>
               </div>
               <div class="project-card__body">
-                <h3 class="h3">Retail Sales Performance</h3>
-                <p class="project-card__question">Which regions and product lines are driving growth, and which are quietly losing margin?</p>
+                <h3 class="h3">Technician Payroll &amp; Performance</h3>
+                <p class="project-card__question">What is each of 200+ technicians owed this week, without anyone rebuilding a spreadsheet to find out?</p>
                 <ul class="tag-list" aria-label="Techniques">
-                  <li class="tag">Time intelligence</li>
-                  <li class="tag">Star schema</li>
-                  <li class="tag">Drill-through</li>
+                  <li class="tag">Data integration</li>
+                  <li class="tag">Row-level security</li>
+                  <li class="tag">Power Query</li>
                 </ul>
                 <div class="project-card__links">
-                  <a class="text-link" href="projects/retail-sales.html" aria-label="Read case study: Retail Sales Performance">Read case study →</a>
-                  <a class="text-link" href="https://github.com/AddisonBlack/[retail-sales-repo]" aria-label="GitHub: Retail Sales Performance repository">GitHub</a>
+                  <a class="text-link" href="projects/technician-payroll.html" aria-label="Read case study: Technician Payroll and Performance">Read case study →</a>
+                  <a class="text-link" href="https://github.com/AddisonBlack/[technician-payroll-repo]" aria-label="GitHub: Technician Payroll and Performance repository (opens in a new tab)" target="_blank" rel="noopener">GitHub</a>
                 </div>
               </div>
             </article>
@@ -186,7 +192,35 @@
           <!-- Project 2 -->
           <li>
             <article class="card project-card">
-              <!-- [Replace with <img class="thumb" src="assets/img/customer-retention-thumb.png" alt="Customer retention cohort matrix"> ] -->
+              <!-- [Replace with <img class="thumb" src="assets/img/sales-leaderboard-thumb.png" alt="Sales leaderboard on an office TV">] -->
+              <div class="thumb thumb--leaderboard" aria-hidden="true">
+                <span class="thumb__label">[Screenshot]</span>
+                <span class="is-top" style="width:84%"></span>
+                <span style="width:70%"></span>
+                <span style="width:58%"></span>
+                <span style="width:47%"></span>
+                <span style="width:36%"></span>
+              </div>
+              <div class="project-card__body">
+                <h3 class="h3">Live Sales Leaderboard</h3>
+                <p class="project-card__question">Who are this month's top five salespeople, and can the whole office see it without anyone updating a slide?</p>
+                <ul class="tag-list" aria-label="Techniques">
+                  <li class="tag">Designing for TV</li>
+                  <li class="tag">RANKX</li>
+                  <li class="tag">Scheduled refresh</li>
+                </ul>
+                <div class="project-card__links">
+                  <a class="text-link" href="projects/sales-leaderboard.html" aria-label="Read case study: Live Sales Leaderboard">Read case study →</a>
+                  <a class="text-link" href="https://github.com/AddisonBlack/[sales-leaderboard-repo]" aria-label="GitHub: Live Sales Leaderboard repository (opens in a new tab)" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Project 3 -->
+          <li>
+            <article class="card project-card">
+              <!-- [Replace with <img class="thumb" src="assets/img/customer-retention-thumb.png" alt="Customer retention cohort matrix">] -->
               <div class="thumb thumb--cohort" aria-hidden="true">
                 <span class="thumb__label">[Screenshot]</span>
                 <span style="opacity:1"></span><span style="opacity:.85"></span><span style="opacity:.7"></span><span style="opacity:.6"></span><span style="opacity:.5"></span><span style="opacity:.42"></span><span style="opacity:.36"></span><span style="opacity:.3"></span>
@@ -197,45 +231,15 @@
               </div>
               <div class="project-card__body">
                 <h3 class="h3">Customer Retention Cohorts</h3>
-                <p class="project-card__question">When do customers stop coming back, and which acquisition channels bring in the ones who stay?</p>
+                <p class="project-card__question">When do customers stop coming back, and which cohorts hold on to the most of them?</p>
                 <ul class="tag-list" aria-label="Techniques">
                   <li class="tag">Cohort analysis</li>
                   <li class="tag">Advanced DAX</li>
                   <li class="tag">Field parameters</li>
                 </ul>
                 <div class="project-card__links">
-                  <!-- [Change href to projects/customer-retention.html once that page exists] -->
-                  <a class="text-link" href="#projects" aria-label="Read case study: Customer Retention Cohorts">Read case study →</a>
-                  <a class="text-link" href="https://github.com/AddisonBlack/[customer-retention-repo]" aria-label="GitHub: Customer Retention Cohorts repository">GitHub</a>
-                </div>
-              </div>
-            </article>
-          </li>
-
-          <!-- Project 3 -->
-          <li>
-            <article class="card project-card">
-              <!-- [Replace with <img class="thumb" src="assets/img/inventory-thumb.png" alt="Inventory and supply chain dashboard"> ] -->
-              <div class="thumb thumb--hbars" aria-hidden="true">
-                <span class="thumb__label">[Screenshot]</span>
-                <span style="width:82%"></span>
-                <span style="width:64%" class="is-alert"></span>
-                <span style="width:90%"></span>
-                <span style="width:38%" class="is-alert"></span>
-                <span style="width:56%"></span>
-              </div>
-              <div class="project-card__body">
-                <h3 class="h3">Inventory &amp; Supply Chain</h3>
-                <p class="project-card__question">Which warehouses are overstocked, which SKUs are about to run out, and what is late inventory costing?</p>
-                <ul class="tag-list" aria-label="Techniques">
-                  <li class="tag">Power Query</li>
-                  <li class="tag">Row-level security</li>
-                  <li class="tag">Conditional formatting</li>
-                </ul>
-                <div class="project-card__links">
-                  <!-- [Change href to projects/inventory-supply-chain.html once that page exists] -->
-                  <a class="text-link" href="#projects" aria-label="Read case study: Inventory and Supply Chain">Read case study →</a>
-                  <a class="text-link" href="https://github.com/AddisonBlack/[inventory-repo]" aria-label="GitHub: Inventory and Supply Chain repository">GitHub</a>
+                  <a class="text-link" href="projects/customer-retention.html" aria-label="Read case study: Customer Retention Cohorts">Read case study →</a>
+                  <a class="text-link" href="https://github.com/AddisonBlack/[customer-retention-repo]" aria-label="GitHub: Customer Retention Cohorts repository (opens in a new tab)" target="_blank" rel="noopener">GitHub</a>
                 </div>
               </div>
             </article>
@@ -255,7 +259,7 @@
             that survive filter context, and ranking. Each one comes with a plain-English
             explanation of what it does and when to use it.
           </p>
-          <a class="btn btn--tan" href="https://github.com/AddisonBlack/[dax-library-repo]">Browse the library</a>
+          <a class="btn btn--tan" href="https://github.com/AddisonBlack/[dax-library-repo]" target="_blank" rel="noopener">Browse the library<span class="visually-hidden"> (opens in a new tab)</span></a>
         </div>
 
         <figure class="code-block">
@@ -276,6 +280,59 @@
       </div>
     </section>
 
+    <!-- ===================== iOS apps ===================== -->
+    <section id="apps" class="section section--sage" aria-labelledby="apps-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Side projects</p>
+          <h2 id="apps-title" class="h2">Other things I've built</h2>
+          <p class="apps-intro">Outside of Power BI, I build and ship my own iPhone apps.</p>
+        </header>
+
+        <ul class="apps-grid">
+          <!-- App 1 -->
+          <li>
+            <article class="card app-card">
+              <img class="app-card__icon" src="assets/img/apps/frugl-icon.jpg" alt="" width="72" height="72" loading="lazy">
+              <div class="app-card__body">
+                <h3 class="h3">frugl: Budget &amp; Grow</h3>
+                <p class="app-card__meta">Finance · iPhone</p>
+                <p>
+                  A friendlier way to budget. Give each spending jar a monthly limit, log expenses
+                  in a few taps, and keep an eye on Sprig, a little plant whose mood shows how your
+                  budget is doing. Everything stays on your iPhone, with no bank connections.
+                </p>
+                <div class="app-card__links">
+                  <a class="btn btn--primary btn--sm" href="https://apps.apple.com/us/app/frugl-budget-grow/id6813641455" target="_blank" rel="noopener" aria-label="frugl on the App Store (opens in a new tab)">App Store</a>
+                  <a class="btn btn--outline btn--sm" href="https://usefrugl.com/" target="_blank" rel="noopener" aria-label="frugl website (opens in a new tab)">Website</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- App 2 -->
+          <li>
+            <article class="card app-card">
+              <img class="app-card__icon" src="assets/img/apps/where-on-earth-icon.jpg" alt="" width="72" height="72" loading="lazy">
+              <div class="app-card__body">
+                <h3 class="h3">Where on Earth? Geo Game</h3>
+                <p class="app-card__meta">Trivia · iPhone</p>
+                <p>
+                  A daily geography challenge: find the day's mystery country in as few guesses as
+                  possible, using hints about its whereabouts, capital and neighbors. Free Play
+                  mode keeps the game going after the daily puzzle.
+                </p>
+                <div class="app-card__links">
+                  <a class="btn btn--primary btn--sm" href="https://apps.apple.com/us/app/where-on-earth-geo-game/id6752313335" target="_blank" rel="noopener" aria-label="Where on Earth? on the App Store (opens in a new tab)">App Store</a>
+                  <a class="btn btn--outline btn--sm" href="https://www.whereonearth.to/" target="_blank" rel="noopener" aria-label="Where on Earth? website (opens in a new tab)">Website</a>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- ===================== About & contact ===================== -->
     <section id="about" class="section" aria-labelledby="about-title">
       <div class="container about-grid">
@@ -283,31 +340,37 @@
           <p class="eyebrow">About</p>
           <h2 id="about-title" class="h2">Hi, I'm Addison.</h2>
           <p>
-            [Your background: where you started, what kind of teams you've built reports for,
-            and what you enjoy most about the work. Two or three sentences is plenty.]
+            I started out in sales, so I know what it's like to be the person waiting on a report. That's what pulled me into Power BI. In four years at a consultancy, I went from junior developer to lead. I build reports for HVAC, accounting and medical device clients. What I enjoy most is turning a process someone dreads into one they never have to think about.
           </p>
-          <p>
-            [Certifications and credentials, e.g. "Microsoft Certified: Power BI Data Analyst
-            Associate (PL-300)", plus anything else you're learning right now.]
-          </p>
+          <h3 class="about-subhead">Certifications</h3>
+          <ul class="cert-list">
+            <li>
+              <span class="cert-code">PL-300</span>
+              <a href="https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/?practice-assessment-type=certification" target="_blank" rel="noopener">Microsoft Certified: Power BI Data Analyst Associate<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </li>
+            <li>
+              <span class="cert-code">AZ-900</span>
+              <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" target="_blank" rel="noopener">Microsoft Certified: Azure Fundamentals<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </li>
+          </ul>
         </div>
 
         <aside class="card contact-card" aria-labelledby="contact-title">
           <h3 id="contact-title" class="h3">Let's talk</h3>
-          <p>[Open to Power BI roles and freelance projects. I usually reply within a day or two.]</p>
-          <a class="btn btn--primary" href="mailto:[your-email@example.com]">Email me</a>
-          <a class="btn btn--outline" href="assets/resume.pdf" download>Download resume (PDF)</a>
+          <p>Whether it's a role, a project, or a DAX question, I'm happy to talk. I usually reply within a day or two.</p>
+          <a class="btn btn--primary" href="mailto:mraddisonblack@gmail.com">Email me</a>
+          <a class="btn btn--outline" href="assets/Addison_Black_Resume.pdf" download="Addison_Black_Resume.pdf">Download resume (PDF)</a>
           <ul class="contact-links">
             <li>
-              <a class="icon-text-link" href="https://www.linkedin.com/in/[your-linkedin-handle]">
+              <a class="icon-text-link" href="https://www.linkedin.com/in/addison-black-a16986448/" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-                LinkedIn
+                LinkedIn<span class="visually-hidden"> (opens in a new tab)</span>
               </a>
             </li>
             <li>
-              <a class="icon-text-link" href="https://github.com/AddisonBlack">
+              <a class="icon-text-link" href="https://github.com/AddisonBlack" target="_blank" rel="noopener">
                 <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-                GitHub
+                GitHub<span class="visually-hidden"> (opens in a new tab)</span>
               </a>
             </li>
           </ul>
@@ -321,7 +384,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© 2026 Addison Black</p>
-      <p>Built with <a href="https://pages.github.com/">GitHub Pages</a></p>
+      <p>Built with <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages<span class="visually-hidden"> (opens in a new tab)</span></a></p>
     </div>
   </footer>
 

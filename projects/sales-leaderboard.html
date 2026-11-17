@@ -7,17 +7,17 @@
 
   <!-- TEMPLATE: to make a new case study, copy this file, then update every
        [bracketed] item, the <title>, meta tags, and the "Next project" link. -->
-  <title>Retail Sales Performance | Addison Black</title>
-  <meta name="description" content="[Case study: a Power BI report showing which regions and product lines drive growth and which are losing margin.]">
-  <link rel="canonical" href="https://addisonblack.github.io/projects/retail-sales.html">
+  <title>Live Sales Leaderboard | Addison Black</title>
+  <meta name="description" content="Case study: a Power BI leaderboard designed for office TVs that cycles through the top five salespeople automatically.">
+  <link rel="canonical" href="https://addisonblack.github.io/projects/sales-leaderboard.html">
 
   <!-- Open Graph / social sharing previews -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Addison Black">
-  <meta property="og:title" content="Retail Sales Performance | Addison Black">
-  <meta property="og:description" content="[One-sentence summary of this case study for link previews.]">
-  <meta property="og:url" content="https://addisonblack.github.io/projects/retail-sales.html">
-  <meta property="og:image" content="https://addisonblack.github.io/assets/img/[retail-sales-og-1200x630].png">
+  <meta property="og:title" content="Live Sales Leaderboard | Addison Black">
+  <meta property="og:description" content="A Power BI sales leaderboard built for office TVs, rebuilt on synthetic data.">
+  <meta property="og:url" content="https://addisonblack.github.io/projects/sales-leaderboard.html">
+  <meta property="og:image" content="https://addisonblack.github.io/assets/img/[sales-leaderboard-og-1200x630].png">
   <meta property="og:image:alt" content="[Describe the preview image]">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -45,14 +45,15 @@
         <ul class="nav-list">
           <li><a href="../index.html#projects">Projects</a></li>
           <li><a href="../index.html#dax">DAX Library</a></li>
+          <li><a href="../index.html#apps">Apps</a></li>
           <li><a href="../index.html#about">About</a></li>
           <li>
-            <a class="nav-icon" href="https://github.com/AddisonBlack" aria-label="GitHub">
+            <a class="nav-icon" href="https://github.com/AddisonBlack" aria-label="GitHub (opens in a new tab)" target="_blank" rel="noopener">
               <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
               <span class="nav-icon__text visually-hidden">GitHub</span>
             </a>
           </li>
-          <li><a class="btn btn--primary btn--sm" href="../assets/resume.pdf">Resume</a></li>
+          <li><a class="btn btn--primary btn--sm" href="../assets/Addison_Black_Resume.pdf" target="_blank" rel="noopener">Resume<span class="visually-hidden"> (PDF, opens in a new tab)</span></a></li>
         </ul>
       </nav>
     </div>
@@ -65,32 +66,30 @@
       <div class="container">
         <a class="back-link" href="../index.html#projects">← All projects</a>
         <p class="eyebrow">Case study</p>
-        <h1 id="cs-title" class="h1">Retail Sales Performance</h1>
+        <h1 id="cs-title" class="h1">Live Sales Leaderboard</h1>
         <p class="lead">
-          [One-paragraph summary: who the report is for, what question it answers, and the
-          single most useful thing it revealed. Aim for three or four sentences.]
+          A sales team's leaderboard was updated manually, with multiple hands involved. I replaced it with a Power BI report that cycles the top five salespeople across the office TVs, so the whole team sees current numbers every day without anyone touching a spreadsheet. Management now pays a monthly bonus to everyone on the board.
         </p>
+        <p class="cs-note">Rebuilt on synthetic data. The original was built for a client, so every company name, person and number on this page is made up. The problem and the approach are real.</p>
 
         <dl class="meta">
           <div>
             <dt>Tools</dt>
-            <dd>Power BI Desktop, Power Query, DAX</dd>
+            <dd>Power BI, DAX, Power BI Service, Scheduled refresh</dd>
           </div>
           <div>
             <dt>Data</dt>
-            <dd><a href="[https://link-to-dataset-source]">[Dataset name + source]</a></dd>
+            <dd><a href="https://github.com/AddisonBlack/addisonblack.github.io/tree/main/data" target="_blank" rel="noopener">Synthetic HVAC company dataset<span class="visually-hidden"> (opens in a new tab)</span></a>, shaped like ServiceTitan and QuickBooks exports</dd>
           </div>
           <div>
             <dt>Role</dt>
-            <dd>[Solo project: data prep, modeling, report design]</dd>
+            <dd>Sole developer: requirements, report design, deployment</dd>
           </div>
           <div>
             <dt>Links</dt>
-            <dd>
-              <a href="https://github.com/AddisonBlack/[retail-sales-repo]">GitHub</a>
+            <dd><a href="https://github.com/AddisonBlack/[sales-leaderboard-repo]" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
               ·
-              <a href="#walkthrough">Video walkthrough</a>
-            </dd>
+              <a href="#walkthrough">Video walkthrough</a></dd>
           </div>
         </dl>
       </div>
@@ -99,17 +98,16 @@
     <!-- ===================== Full dashboard screenshot ===================== -->
     <div class="container">
       <!-- Replace the placeholder <div> with:
-           <img src="../assets/img/retail-sales-full.png" alt="[Describe the full dashboard]" width="1920" height="1080"> -->
+           <img src="../assets/img/sales-leaderboard-full.png" alt="[Describe the full report page]" width="1920" height="1080"> -->
       <figure class="media-figure">
-        <div class="media-placeholder">[Full dashboard screenshot, 16:9, e.g. 1920 × 1080]</div>
-        <figcaption class="figure-caption">[Caption: what the viewer is looking at, e.g. "Executive overview page with drill-through to store detail."]</figcaption>
+        <div class="media-placeholder">[Leaderboard screenshot or GIF of it cycling, 16:9]</div>
+        <figcaption class="figure-caption">[Caption, e.g. "Top five salespeople this month, as shown on the office TVs."]</figcaption>
       </figure>
     </div>
 
     <!-- ===================== Content sections ===================== -->
     <div class="container cs-body">
 
-      <!-- The question -->
       <section class="cs-section" aria-labelledby="q-title">
         <div>
           <p class="eyebrow">01</p>
@@ -118,31 +116,31 @@
         <div class="cs-section__content">
           <dl class="qa-list">
             <dt>Audience</dt>
-            <dd>[Who uses this report, e.g. regional sales managers and the finance team.]</dd>
+            <dd>The whole sales team, on TVs around the office, plus [managers / owners].</dd>
             <dt>The decision</dt>
-            <dd>[What decision this report supports, e.g. where to shift promotional budget next quarter.]</dd>
+            <dd>[What the leaderboard drives, e.g. friendly competition and a daily sense of who's closing.]</dd>
             <dt>What "done" looked like</dt>
-            <dd>[How you knew it worked, e.g. managers could find their region's margin trend in under 30 seconds.]</dd>
+            <dd>A leaderboard that stays current on its own. [Add the specific goal, e.g. "readable from across the room, with no manual updates."]</dd>
           </dl>
         </div>
       </section>
-
-      <!-- Data prep -->
-      <section class="cs-section" aria-labelledby="prep-title">
+      <section class="cs-section" aria-labelledby="design-title">
         <div>
           <p class="eyebrow">02</p>
-          <h2 id="prep-title" class="h3">Data prep</h2>
+          <h2 id="design-title" class="h3">Designing for a TV</h2>
         </div>
         <div class="cs-section__content">
+          <p>
+            A report on a wall TV works differently from one on a desk. Nobody clicks, people
+            glance at it from across the room, and it has to stay current all day.
+          </p>
           <ol class="steps">
-            <li>[Step 1, e.g. Combined monthly CSV exports from a folder with Power Query and standardised column names.]</li>
-            <li>[Step 2, e.g. Removed duplicate transactions and split the product code into category and SKU.]</li>
-            <li>[Step 3, e.g. Built a dedicated date table and marked it as the model's date table.]</li>
+            <li>[Large type and high contrast, e.g. minimum font size and how many people fit on one page.]</li>
+            <li>[How the pages cycle, e.g. the tool or setting you used to rotate pages on the TVs.]</li>
+            <li>[Refresh schedule, e.g. how often the data updates and how the TVs pick it up.]</li>
           </ol>
         </div>
       </section>
-
-      <!-- Data model -->
       <section class="cs-section" aria-labelledby="model-title">
         <div>
           <p class="eyebrow">03</p>
@@ -150,27 +148,24 @@
         </div>
         <div class="cs-section__content">
           <p>
-            The model is a star schema: one fact table of sales transactions surrounded by
-            dimension tables for date, product, store and customer. Every relationship is
-            one-to-many and filters in a single direction, which keeps the DAX simple and the
-            report fast. [Add anything specific to your model here.]
+            A small star schema: sales facts with dimensions for date, salesperson and business
+            unit. The ranking happens in DAX, so the top five update on their own as new sales
+            come in. [Add anything specific to your model.]
           </p>
           <!-- [Replace this diagram with a screenshot of your real model view:
-               <img src="../assets/img/retail-sales-model.png" alt="Power BI model view showing the star schema"> ] -->
+               <img src="../assets/img/[model-screenshot].png" alt="Power BI model view showing the star schema"> ] -->
           <figure class="card schema">
             <div class="schema__grid">
               <div class="schema__table schema__table--date">Dim Date</div>
-              <div class="schema__table schema__table--product">Dim Product</div>
+              <div class="schema__table schema__table--product">Dim Salesperson</div>
               <div class="schema__table schema__table--fact">Fact Sales</div>
-              <div class="schema__table schema__table--store">Dim Store</div>
+              <div class="schema__table schema__table--store">Dim Business Unit</div>
               <div class="schema__table schema__table--customer">Dim Customer</div>
             </div>
             <figcaption class="muted">Star schema with Fact Sales at the center. [Replace with a screenshot of your model view.]</figcaption>
           </figure>
         </div>
       </section>
-
-      <!-- Key measures -->
       <section class="cs-section" aria-labelledby="measures-title">
         <div>
           <p class="eyebrow">04</p>
@@ -179,43 +174,48 @@
         <div class="cs-section__content">
           <figure class="code-block">
             <figcaption class="code-block__bar">
-              <span>Gross Margin %</span>
+              <span>Sales Rank</span>
               <span>DAX</span>
             </figcaption>
-<pre tabindex="0" aria-label="DAX measure: Gross Margin %"><code><span class="tok-name">Gross Margin %</span> = <span class="tok-fn">DIVIDE</span> ( [Total Sales] - [Total Cost], [Total Sales] )</code></pre>
+<pre tabindex="0" aria-label="DAX: Sales Rank"><code><span class="tok-name">Sales Rank</span> =
+<span class="tok-fn">RANKX</span> (
+    <span class="tok-fn">ALLSELECTED</span> ( 'Dim Salesperson' ),
+    [Total Sales],
+    ,
+    <span class="tok-kw">DESC</span>,
+    <span class="tok-kw">DENSE</span>
+)</code></pre>
           </figure>
           <p>
-            [Explain the measure in plain English: what it calculates, why DIVIDE is used instead
-            of the / operator, and where it appears in the report.]
+            Ranks every salesperson by sales for the selected period. ALLSELECTED keeps the
+            ranking inside whatever filters are applied, such as this month or one business unit.
+            A visual-level filter on Sales Rank &lt;= 5 keeps the top five. [Adjust to match your
+            real measure.]
           </p>
         </div>
       </section>
-
-      <!-- What the data showed -->
-      <section class="cs-section" aria-labelledby="insights-title">
+      <section class="cs-section" aria-labelledby="impact-title">
         <div>
           <p class="eyebrow">05</p>
-          <h2 id="insights-title" class="h3">What the data showed</h2>
+          <h2 id="impact-title" class="h3">Impact</h2>
         </div>
         <div class="cs-section__content">
           <ul class="insights">
             <li class="card insight">
-              <span class="insight__stat">[Stat]</span>
-              <p>[Finding, e.g. The North region grew fastest but its margin fell four points.]</p>
+              <span class="insight__stat">Top 5</span>
+              <p>Salespeople cycled across the office TVs, updated automatically.</p>
+            </li>
+            <li class="card insight">
+              <span class="insight__stat">Daily</span>
+              <p>The whole team sees current numbers, with no manual updates.</p>
             </li>
             <li class="card insight">
               <span class="insight__stat">[Stat]</span>
-              <p>[Finding]</p>
-            </li>
-            <li class="card insight">
-              <span class="insight__stat">[Stat]</span>
-              <p>[Finding]</p>
+              <p>[Finding, e.g. hours a month no longer spent updating the old leaderboard.]</p>
             </li>
           </ul>
         </div>
       </section>
-
-      <!-- Walkthrough -->
       <section id="walkthrough" class="cs-section" aria-labelledby="walkthrough-title">
         <div>
           <p class="eyebrow">06</p>
@@ -224,7 +224,7 @@
         <div class="cs-section__content">
           <!-- Replace the placeholder <div> with your video, e.g. a YouTube embed:
                <iframe src="https://www.youtube-nocookie.com/embed/[VIDEO_ID]"
-                       title="Retail Sales Performance walkthrough"
+                       title="Live Sales Leaderboard walkthrough"
                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                        allowfullscreen loading="lazy"></iframe> -->
           <figure class="media-figure">
@@ -248,8 +248,7 @@
     <section class="section--dark next-project" aria-labelledby="next-title">
       <div class="container">
         <h2 id="next-title" class="eyebrow">Next project</h2>
-        <!-- [Change href to the next case study, e.g. customer-retention.html] -->
-        <a class="next-project__link" href="../index.html#projects">Customer Retention Cohorts <span aria-hidden="true">→</span></a>
+        <a class="next-project__link" href="customer-retention.html">Customer Retention Cohorts <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
@@ -259,7 +258,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© 2026 Addison Black</p>
-      <p>Built with <a href="https://pages.github.com/">GitHub Pages</a></p>
+      <p>Built with <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages<span class="visually-hidden"> (opens in a new tab)</span></a></p>
     </div>
   </footer>
 

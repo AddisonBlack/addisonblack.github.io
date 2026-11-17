@@ -1,0 +1,261 @@
+TechnicianID,TechnicianName,Email,BusinessUnitID,Position,HireDate,TerminationDate,Status,ManagerName,ManagerEmail
+4106979,Michelle Ward,michelle.ward@contoso.com,1004,Technician II,2023-11-20,,Active,Jacob Green,jacob.green@contoso.com
+4109886,Samantha Spencer,samantha.spencer@contoso.com,1005,Apprentice,2025-11-23,,Active,Carlos Cox,carlos.cox@contoso.com
+4111216,Brandon Burns,brandon.burns@contoso.com,1001,Apprentice,2026-01-23,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4118957,Andre Washington,andre.washington@contoso.com,1003,Senior Technician,2020-05-26,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4122637,Vincent Hughes,vincent.hughes@contoso.com,1002,Technician II,2025-01-26,,Active,Vincent Garza,vincent.garza@contoso.com
+4125184,Peter Henry,peter.henry@contoso.com,1004,Apprentice,2026-01-10,,Active,Brandon James,brandon.james@contoso.com
+4128696,Jack Anderson,jack.anderson@contoso.com,1002,Technician I,2024-05-16,,Active,Paul Hudson,paul.hudson@contoso.com
+4132950,Trevor Stevens,trevor.stevens@contoso.com,1004,Senior Technician,2018-09-09,,Active,Jacob Green,jacob.green@contoso.com
+4133915,Frank Cruz,frank.cruz@contoso.com,1002,Technician II,2025-08-25,,Active,Paul Hudson,paul.hudson@contoso.com
+4136078,Maria Richardson,maria.richardson@contoso.com,1001,Technician I,2026-01-17,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4145546,Mason Fernandez,mason.fernandez@contoso.com,1001,Technician I,2025-01-11,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4148876,Steven Warren,steven.warren@contoso.com,1002,Lead Technician,2014-09-23,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4158818,Pat Pierce,pat.pierce@contoso.com,1001,Lead Technician,2014-01-10,,Active,Larry Williams,larry.williams@contoso.com
+4159804,Jeremy Ward,jeremy.ward@contoso.com,1001,Lead Technician,2013-09-06,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4160527,Dennis Armstrong,dennis.armstrong@contoso.com,1001,Senior Technician,2017-12-06,2025-01-21,Inactive,Wyatt Woods,wyatt.woods@contoso.com
+4164712,James Cruz,james.cruz@contoso.com,1001,Senior Technician,2020-03-12,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4174128,Kyle Simmons,kyle.simmons@contoso.com,1003,Senior Technician,2022-10-29,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4176085,Nick Boyd,nick.boyd@contoso.com,1003,Technician II,2024-03-11,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4177123,Noah Hart,noah.hart@contoso.com,1003,Lead Technician,2012-05-02,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4184873,Dennis White,dennis.white@contoso.com,1001,Lead Technician,2014-01-24,,Active,Larry Williams,larry.williams@contoso.com
+4185239,James Myers,james.myers@contoso.com,1001,Lead Technician,2015-12-15,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4191025,Ronald Fisher,ronald.fisher@contoso.com,1004,Technician II,2024-12-02,,Active,Brandon James,brandon.james@contoso.com
+4195152,Peter Simmons,peter.simmons@contoso.com,1003,Technician I,2024-12-18,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4195894,Josh Shaw,josh.shaw@contoso.com,1001,Apprentice,2026-06-24,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4198633,Maria Robertson,maria.robertson@contoso.com,1002,Technician II,2023-04-12,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4199820,Justin Ward,justin.ward@contoso.com,1002,Technician I,2026-01-27,,Active,Vincent Garza,vincent.garza@contoso.com
+4201295,Tyler Richardson,tyler.richardson@contoso.com,1002,Lead Technician,2013-03-03,,Active,Vincent Garza,vincent.garza@contoso.com
+4204300,Andre Carroll,andre.carroll@contoso.com,1003,Lead Technician,2013-06-23,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4206156,Malik King,malik.king@contoso.com,1002,Technician I,2026-01-22,,Active,Paul Hudson,paul.hudson@contoso.com
+4214841,Jacob Patel,jacob.patel@contoso.com,1004,Technician I,2025-01-05,,Active,Brandon James,brandon.james@contoso.com
+4216730,Wayne Hall,wayne.hall@contoso.com,1001,Technician II,2026-10-07,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4217699,Brandon Harrison,brandon.harrison@contoso.com,1001,Technician I,2024-07-15,,Active,Larry Williams,larry.williams@contoso.com
+4219592,Kyle Barnes,kyle.barnes@contoso.com,1002,Apprentice,2026-09-28,,Active,Vincent Garza,vincent.garza@contoso.com
+4221917,Hunter Brooks,hunter.brooks@contoso.com,1001,Lead Technician,2016-05-21,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4224432,Lucas Lawrence,lucas.lawrence@contoso.com,1002,Technician I,2026-08-23,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4224659,Michael Thomas,michael.thomas@contoso.com,1004,Lead Technician,2016-06-14,,Active,Brandon James,brandon.james@contoso.com
+4240845,Jacob Murphy,jacob.murphy@contoso.com,1004,Technician II,2023-06-27,,Active,Brandon James,brandon.james@contoso.com
+4244570,Paul Gutierrez,paul.gutierrez@contoso.com,1002,Lead Technician,2010-12-12,,Active,Vincent Garza,vincent.garza@contoso.com
+4247135,Travis Chavez,travis.chavez@contoso.com,1003,Technician II,2026-01-17,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4263596,James Stephens,james.stephens@contoso.com,1004,Lead Technician,2018-01-30,,Active,Jacob Green,jacob.green@contoso.com
+4279290,Colton Reed,colton.reed@contoso.com,1002,Technician II,2024-12-13,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4283225,Daniel Pierce,daniel.pierce@contoso.com,1004,Senior Technician,2019-05-19,,Active,Jacob Green,jacob.green@contoso.com
+4288014,Randy Henry,randy.henry@contoso.com,1006,Technician II,2026-07-03,,Active,Christopher White,christopher.white@contoso.com
+4291743,Austin Campbell,austin.campbell@contoso.com,1001,Technician II,2026-01-01,2026-10-25,Inactive,Christine Gutierrez,christine.gutierrez@contoso.com
+4292107,Austin Morales,austin.morales@contoso.com,1004,Technician I,2024-03-28,,Active,Jacob Green,jacob.green@contoso.com
+4292549,Vincent Weaver,vincent.weaver@contoso.com,1006,Senior Technician,2017-10-26,,Active,Christopher White,christopher.white@contoso.com
+4292748,Travis Pierce,travis.pierce@contoso.com,1001,Apprentice,2026-01-22,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4293631,Alex Hamilton,alex.hamilton@contoso.com,1003,Lead Technician,2014-07-29,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4300582,Kevin Gordon,kevin.gordon@contoso.com,1003,Senior Technician,2017-09-12,2026-11-11,Inactive,Donald Vasquez,donald.vasquez@contoso.com
+4302625,Robert Thomas,robert.thomas@contoso.com,1001,Technician II,2024-01-06,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4302661,Brenda Lopez,brenda.lopez@contoso.com,1002,Lead Technician,2010-05-21,2025-02-04,Inactive,Paul Hudson,paul.hudson@contoso.com
+4302685,Larry Wood,larry.wood@contoso.com,1001,Senior Technician,2019-09-29,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4309035,Garrett Knight,garrett.knight@contoso.com,1006,Senior Technician,2021-04-20,,Active,Christopher White,christopher.white@contoso.com
+4314521,Dan Mitchell,dan.mitchell@contoso.com,1002,Apprentice,2026-01-19,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4315207,Walter Morgan,walter.morgan@contoso.com,1001,Technician I,2026-05-20,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4319146,Amy Lane,amy.lane@contoso.com,1004,Lead Technician,2013-05-11,,Active,Brandon James,brandon.james@contoso.com
+4321211,Dylan Mitchell,dylan.mitchell@contoso.com,1002,Senior Technician,2019-07-19,,Active,Vincent Garza,vincent.garza@contoso.com
+4323378,Kelly Walker,kelly.walker@contoso.com,1001,Apprentice,2026-07-02,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4324689,Austin Wright,austin.wright@contoso.com,1002,Lead Technician,2015-01-08,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4325298,Arthur White,arthur.white@contoso.com,1001,Senior Technician,2019-10-20,2026-07-23,Inactive,Larry Williams,larry.williams@contoso.com
+4328617,Wayne Willis,wayne.willis@contoso.com,1004,Senior Technician,2024-07-13,,Active,Brandon James,brandon.james@contoso.com
+4330107,Christian Cox,christian.cox@contoso.com,1002,Technician II,2021-02-12,,Active,Paul Hudson,paul.hudson@contoso.com
+4333943,Peter Ray,peter.ray@contoso.com,1002,Technician II,2024-01-28,,Active,Paul Hudson,paul.hudson@contoso.com
+4335144,Trevor Johnson,trevor.johnson@contoso.com,1002,Senior Technician,2022-04-23,,Active,Vincent Garza,vincent.garza@contoso.com
+4351371,Randy Silva,randy.silva@contoso.com,1001,Senior Technician,2022-01-08,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4351660,Randy Ramos,randy.ramos@contoso.com,1004,Lead Technician,2016-02-25,,Active,Brandon James,brandon.james@contoso.com
+4357691,Karen James,karen.james@contoso.com,1006,Technician I,2025-01-11,,Active,Christopher White,christopher.white@contoso.com
+4360936,Elijah Simmons,elijah.simmons@contoso.com,1001,Lead Technician,2012-09-22,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4365749,Rob Turner,rob.turner@contoso.com,1004,Technician II,2024-08-21,,Active,Jacob Green,jacob.green@contoso.com
+4367277,Gabriel Mendez,gabriel.mendez@contoso.com,1001,Technician II,2026-01-23,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4377393,Vincent Carter,vincent.carter@contoso.com,1002,Technician II,2024-07-26,,Active,Vincent Garza,vincent.garza@contoso.com
+4380910,Michelle Anderson,michelle.anderson@contoso.com,1001,Apprentice,2026-01-06,2026-10-25,Inactive,Brian Gonzales,brian.gonzales@contoso.com
+4382019,Randy Price,randy.price@contoso.com,1001,Technician I,2024-12-14,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4392609,Bryan Guzman,bryan.guzman@contoso.com,1006,Technician II,2025-03-08,2026-03-13,Inactive,Christopher White,christopher.white@contoso.com
+4396292,George Chen,george.chen@contoso.com,1006,Senior Technician,2024-01-08,,Active,Christopher White,christopher.white@contoso.com
+4405352,Austin Griffin,austin.griffin@contoso.com,1002,Lead Technician,2013-12-24,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4405921,Steve Garcia,steve.garcia@contoso.com,1001,Technician II,2026-01-19,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4407258,Mason Fisher,mason.fisher@contoso.com,1006,Technician II,2023-03-24,,Active,Christopher White,christopher.white@contoso.com
+4407576,Arthur Garza,arthur.garza@contoso.com,1002,Lead Technician,2014-02-09,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4408498,Lawrence Adams,lawrence.adams@contoso.com,1001,Technician I,2025-02-22,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4409645,Travis Simpson,travis.simpson@contoso.com,1001,Technician I,2026-01-02,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4410266,Elijah Grant,elijah.grant@contoso.com,1004,Technician II,2026-01-14,,Active,Brandon James,brandon.james@contoso.com
+4410326,John Vargas,john.vargas@contoso.com,1001,Lead Technician,2011-12-17,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4411535,Emma Vasquez,emma.vasquez@contoso.com,1002,Lead Technician,2015-03-15,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4412495,Peter Price,peter.price@contoso.com,1002,Lead Technician,2016-11-11,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4416866,Gabriel Armstrong,gabriel.armstrong@contoso.com,1002,Technician I,2026-01-07,2026-09-16,Inactive,Paul Hudson,paul.hudson@contoso.com
+4421754,Logan Gordon,logan.gordon@contoso.com,1001,Lead Technician,2011-08-16,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4423526,Keith Riley,keith.riley@contoso.com,1002,Technician I,2026-01-01,,Active,Paul Hudson,paul.hudson@contoso.com
+4439470,Justin Vargas,justin.vargas@contoso.com,1001,Lead Technician,2013-05-13,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4439728,Rachel Rivera,rachel.rivera@contoso.com,1002,Apprentice,2026-05-14,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4442067,Carl Perry,carl.perry@contoso.com,1001,Senior Technician,2020-07-15,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4444999,Mason Chen,mason.chen@contoso.com,1001,Technician II,2020-04-22,2026-01-21,Inactive,Nicholas Diaz,nicholas.diaz@contoso.com
+4454337,Bradley Butler,bradley.butler@contoso.com,1001,Lead Technician,2009-11-24,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4454924,Colton Webb,colton.webb@contoso.com,1001,Senior Technician,2018-05-08,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4455732,Patrick Peterson,patrick.peterson@contoso.com,1001,Lead Technician,2010-05-16,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4458807,Rob Barnes,rob.barnes@contoso.com,1004,Senior Technician,2020-03-30,,Active,Brandon James,brandon.james@contoso.com
+4458871,Jacob Brown,jacob.brown@contoso.com,1003,Technician I,2025-01-20,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4460616,Ronald Watson,ronald.watson@contoso.com,1001,Technician II,2026-01-26,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4460807,Jeremy Nichols,jeremy.nichols@contoso.com,1001,Technician II,2025-01-19,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4462062,Scott Baker,scott.baker@contoso.com,1001,Technician II,2020-03-16,2025-04-19,Inactive,Jose Gonzales,jose.gonzales@contoso.com
+4462089,Gregory Boyd,gregory.boyd@contoso.com,1004,Apprentice,2026-01-13,,Active,Jacob Green,jacob.green@contoso.com
+4462540,Christian Jordan,christian.jordan@contoso.com,1001,Lead Technician,2009-12-24,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4463606,Luis Carroll,luis.carroll@contoso.com,1006,Lead Technician,2014-06-01,,Active,Christopher White,christopher.white@contoso.com
+4467704,Richard Chavez,richard.chavez@contoso.com,1001,Senior Technician,2020-01-06,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4469153,Caleb Miller,caleb.miller@contoso.com,1002,Senior Technician,2024-01-13,,Active,Paul Hudson,paul.hudson@contoso.com
+4475159,Juan Santos,juan.santos@contoso.com,1002,Apprentice,2026-01-23,,Active,Scott Robinson,scott.robinson@contoso.com
+4477284,Alex Carter,alex.carter@contoso.com,1001,Technician I,2025-01-15,2026-04-28,Inactive,Brian Gonzales,brian.gonzales@contoso.com
+4478942,Keith Hicks,keith.hicks@contoso.com,1001,Technician I,2026-01-09,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4484678,Samantha Ruiz,samantha.ruiz@contoso.com,1004,Senior Technician,2019-07-24,2026-04-08,Inactive,Brandon James,brandon.james@contoso.com
+4485285,Matthew Mills,matthew.mills@contoso.com,1001,Technician II,2025-03-02,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4486361,Cody Jenkins,cody.jenkins@contoso.com,1001,Apprentice,2026-01-20,,Active,Larry Williams,larry.williams@contoso.com
+4490433,Joe Evans,joe.evans@contoso.com,1001,Technician I,2025-01-04,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4497657,Jordan Powell,jordan.powell@contoso.com,1002,Technician II,2026-01-15,,Active,Scott Robinson,scott.robinson@contoso.com
+4500295,Ryan Riley,ryan.riley@contoso.com,1001,Technician I,2022-08-28,2025-02-21,Inactive,Nicholas Diaz,nicholas.diaz@contoso.com
+4504131,Bryan Duncan,bryan.duncan@contoso.com,1001,Technician I,2023-06-21,2025-06-08,Inactive,Christine Gutierrez,christine.gutierrez@contoso.com
+4506745,Kevin Mitchell,kevin.mitchell@contoso.com,1006,Senior Technician,2017-09-24,,Active,Christopher White,christopher.white@contoso.com
+4513246,Daniel Cox,daniel.cox@contoso.com,1006,Lead Technician,2012-09-04,,Active,Christopher White,christopher.white@contoso.com
+4521645,Keith Simpson,keith.simpson@contoso.com,1004,Technician I,2024-01-11,,Active,Brandon James,brandon.james@contoso.com
+4527278,Jacob Howard,jacob.howard@contoso.com,1001,Technician I,2026-03-24,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4530269,Vincent Bennett,vincent.bennett@contoso.com,1002,Technician II,2021-02-08,2025-08-08,Inactive,Vincent Garza,vincent.garza@contoso.com
+4530485,Hunter Mills,hunter.mills@contoso.com,1001,Technician II,2024-09-18,2025-03-12,Inactive,Christine Gutierrez,christine.gutierrez@contoso.com
+4535447,Travis Tran,travis.tran@contoso.com,1001,Lead Technician,2011-01-24,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4535673,Marcus Dunn,marcus.dunn@contoso.com,1002,Technician I,2026-01-24,,Active,Scott Robinson,scott.robinson@contoso.com
+4541665,Jacob Turner,jacob.turner@contoso.com,1003,Technician II,2026-01-08,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4542253,Dennis Salazar,dennis.salazar@contoso.com,1002,Lead Technician,2015-12-05,,Active,Vincent Garza,vincent.garza@contoso.com
+4543674,Eric Wagner,eric.wagner@contoso.com,1002,Lead Technician,2014-08-20,,Active,Scott Robinson,scott.robinson@contoso.com
+4551650,Austin Herrera,austin.herrera@contoso.com,1002,Lead Technician,2009-12-21,,Active,Vincent Garza,vincent.garza@contoso.com
+4561056,Jack Cooper,jack.cooper@contoso.com,1005,Technician II,2026-01-16,,Active,Carlos Cox,carlos.cox@contoso.com
+4569607,Nicholas Ramos,nicholas.ramos@contoso.com,1001,Lead Technician,2014-08-25,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4569695,Raymond Castro,raymond.castro@contoso.com,1004,Senior Technician,2025-01-26,,Active,Jacob Green,jacob.green@contoso.com
+4570133,Kyle Ray,kyle.ray@contoso.com,1004,Senior Technician,2019-05-19,,Active,Jacob Green,jacob.green@contoso.com
+4570979,Walter Thompson,walter.thompson@contoso.com,1006,Lead Technician,2011-11-26,,Active,Christopher White,christopher.white@contoso.com
+4573674,Malik Roberts,malik.roberts@contoso.com,1002,Technician I,2025-06-26,,Active,Paul Hudson,paul.hudson@contoso.com
+4574272,Gabriel Bell,gabriel.bell@contoso.com,1002,Technician I,2025-01-18,2026-08-06,Inactive,Vincent Garza,vincent.garza@contoso.com
+4574370,Wayne Romero,wayne.romero@contoso.com,1001,Technician II,2021-03-13,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4581715,Logan Soto,logan.soto@contoso.com,1001,Senior Technician,2019-05-26,,Active,Larry Williams,larry.williams@contoso.com
+4584058,Bryan Torres,bryan.torres@contoso.com,1004,Technician II,2024-01-14,,Active,Jacob Green,jacob.green@contoso.com
+4586987,Chris Riley,chris.riley@contoso.com,1002,Lead Technician,2010-01-02,,Active,Paul Hudson,paul.hudson@contoso.com
+4592106,Keith Guzman,keith.guzman@contoso.com,1004,Senior Technician,2021-03-21,,Active,Brandon James,brandon.james@contoso.com
+4597840,Dylan Mason,dylan.mason@contoso.com,1002,Senior Technician,2021-10-28,,Active,Vincent Garza,vincent.garza@contoso.com
+4598037,Arthur Freeman,arthur.freeman@contoso.com,1004,Technician II,2023-06-14,,Active,Brandon James,brandon.james@contoso.com
+4601887,Sean Johnson,sean.johnson@contoso.com,1001,Senior Technician,2018-11-26,,Active,Larry Williams,larry.williams@contoso.com
+4603450,Gregory Black,gregory.black@contoso.com,1004,Apprentice,2026-01-03,,Active,Brandon James,brandon.james@contoso.com
+4605487,Thomas Burns,thomas.burns@contoso.com,1002,Technician II,2021-09-08,2026-03-05,Inactive,Paul Hudson,paul.hudson@contoso.com
+4613678,Shane Ferguson,shane.ferguson@contoso.com,1001,Senior Technician,2019-07-01,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4614001,Chris Kennedy,chris.kennedy@contoso.com,1002,Lead Technician,2014-12-05,2025-06-24,Inactive,Paul Hudson,paul.hudson@contoso.com
+4615937,Henry Cook,henry.cook@contoso.com,1006,Apprentice,2026-01-06,,Active,Christopher White,christopher.white@contoso.com
+4624111,Pat Fox,pat.fox@contoso.com,1001,Senior Technician,2020-06-23,,Active,Larry Williams,larry.williams@contoso.com
+4625043,Brandon Ruiz,brandon.ruiz@contoso.com,1001,Apprentice,2026-01-03,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4626516,Rob Sandoval,rob.sandoval@contoso.com,1001,Lead Technician,2016-06-28,,Active,Larry Williams,larry.williams@contoso.com
+4630282,Nathan Clark,nathan.clark@contoso.com,1002,Lead Technician,2015-05-27,,Active,Paul Hudson,paul.hudson@contoso.com
+4632675,Bradley Palmer,bradley.palmer@contoso.com,1001,Senior Technician,2019-10-06,2026-03-18,Inactive,Brian Gonzales,brian.gonzales@contoso.com
+4652947,John Woods,john.woods@contoso.com,1001,Lead Technician,2011-12-28,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4657675,Austin Rodriguez,austin.rodriguez@contoso.com,1001,Technician II,2021-02-06,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4658790,Jose Hughes,jose.hughes@contoso.com,1001,Technician II,2024-07-08,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4659415,Garrett Cole,garrett.cole@contoso.com,1002,Senior Technician,2020-11-14,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4663714,Brandon Anderson,brandon.anderson@contoso.com,1002,Technician II,2026-07-14,,Active,Paul Hudson,paul.hudson@contoso.com
+4667157,Austin Henderson,austin.henderson@contoso.com,1001,Lead Technician,2020-03-02,,Active,Larry Williams,larry.williams@contoso.com
+4667196,Eric James,eric.james@contoso.com,1002,Apprentice,2026-01-27,,Active,Scott Robinson,scott.robinson@contoso.com
+4677149,Larry Guzman,larry.guzman@contoso.com,1006,Technician II,2020-12-19,2025-03-11,Inactive,Christopher White,christopher.white@contoso.com
+4680212,Ronald Jimenez,ronald.jimenez@contoso.com,1003,Technician I,2026-01-20,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4681585,Jason Freeman,jason.freeman@contoso.com,1004,Technician I,2026-04-10,,Active,Brandon James,brandon.james@contoso.com
+4682172,Carl Weaver,carl.weaver@contoso.com,1004,Lead Technician,2017-12-02,,Active,Brandon James,brandon.james@contoso.com
+4685929,Marcus Brooks,marcus.brooks@contoso.com,1001,Technician I,2025-01-19,2025-08-16,Inactive,Nicholas Diaz,nicholas.diaz@contoso.com
+4692166,Rachel Robinson,rachel.robinson@contoso.com,1001,Technician II,2023-05-22,2026-07-06,Inactive,Nicholas Diaz,nicholas.diaz@contoso.com
+4694514,Derek West,derek.west@contoso.com,1006,Senior Technician,2017-07-07,,Active,Christopher White,christopher.white@contoso.com
+4695184,Peter Knight,peter.knight@contoso.com,1003,Apprentice,2026-08-13,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4695554,Peter Carroll,peter.carroll@contoso.com,1002,Technician II,2023-10-28,,Active,Vincent Garza,vincent.garza@contoso.com
+4695726,Luis Davis,luis.davis@contoso.com,1001,Lead Technician,2013-12-14,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4697739,Nathan Barnes,nathan.barnes@contoso.com,1006,Technician II,2023-09-24,,Active,Christopher White,christopher.white@contoso.com
+4697778,Maria Lopez,maria.lopez@contoso.com,1002,Technician I,2026-01-17,,Active,Scott Robinson,scott.robinson@contoso.com
+4697961,Derek Peterson,derek.peterson@contoso.com,1001,Technician I,2025-10-09,,Active,Larry Williams,larry.williams@contoso.com
+4705149,Gary Vasquez,gary.vasquez@contoso.com,1004,Technician I,2026-01-22,,Active,Jacob Green,jacob.green@contoso.com
+4715968,Dennis Willis,dennis.willis@contoso.com,1001,Technician I,2024-01-08,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4716029,Juan Stevens,juan.stevens@contoso.com,1002,Technician I,2026-01-08,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4719038,Brittany Andrews,brittany.andrews@contoso.com,1004,Technician II,2026-01-21,,Active,Brandon James,brandon.james@contoso.com
+4720198,Carlos Smith,carlos.smith@contoso.com,1003,Technician I,2026-11-12,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4720260,Aaron Chavez,aaron.chavez@contoso.com,1004,Apprentice,2026-01-19,,Active,Jacob Green,jacob.green@contoso.com
+4722106,Charles Green,charles.green@contoso.com,1005,Technician II,2024-03-26,,Active,Carlos Cox,carlos.cox@contoso.com
+4728711,Tom Thompson,tom.thompson@contoso.com,1002,Technician II,2025-02-04,,Active,Vincent Garza,vincent.garza@contoso.com
+4729745,Mike Fox,mike.fox@contoso.com,1001,Senior Technician,2024-01-09,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4731579,Richard Lane,richard.lane@contoso.com,1001,Technician II,2026-10-02,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4734990,William Knight,william.knight@contoso.com,1004,Technician II,2024-02-13,,Active,Jacob Green,jacob.green@contoso.com
+4736958,Christian Bell,christian.bell@contoso.com,1001,Lead Technician,2011-11-23,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4752845,Joseph Warren,joseph.warren@contoso.com,1002,Technician II,2020-10-08,2026-07-24,Inactive,Paul Hudson,paul.hudson@contoso.com
+4757821,Zach Tucker,zach.tucker@contoso.com,1001,Technician I,2024-01-17,,Active,Larry Williams,larry.williams@contoso.com
+4758233,Tony Young,tony.young@contoso.com,1001,Apprentice,2026-05-23,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4761313,Jeff Green,jeff.green@contoso.com,1003,Lead Technician,2014-05-01,2026-08-05,Inactive,Donald Vasquez,donald.vasquez@contoso.com
+4761516,Marcus Graham,marcus.graham@contoso.com,1001,Technician I,2026-01-19,2026-05-26,Inactive,Nicholas Diaz,nicholas.diaz@contoso.com
+4766200,Tyler Collins,tyler.collins@contoso.com,1006,Technician I,2026-01-26,,Active,Christopher White,christopher.white@contoso.com
+4770209,Bruce Moore,bruce.moore@contoso.com,1001,Technician II,2026-01-18,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4770991,Megan Ward,megan.ward@contoso.com,1001,Apprentice,2026-01-21,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4771671,Alex Ramirez,alex.ramirez@contoso.com,1001,Senior Technician,2025-04-25,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4773842,Richard Knight,richard.knight@contoso.com,1001,Lead Technician,2012-09-04,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4775481,Andre King,andre.king@contoso.com,1001,Technician II,2022-09-27,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4779614,Noah Allen,noah.allen@contoso.com,1002,Technician II,2026-01-05,,Active,Paul Hudson,paul.hudson@contoso.com
+4782903,Bryan Willis,bryan.willis@contoso.com,1004,Lead Technician,2010-07-28,,Active,Brandon James,brandon.james@contoso.com
+4782983,Jeff Long,jeff.long@contoso.com,1001,Lead Technician,2012-08-31,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4784323,Jeff Barnes,jeff.barnes@contoso.com,1001,Lead Technician,2009-10-21,2026-05-22,Inactive,Brian Gonzales,brian.gonzales@contoso.com
+4784588,George Rice,george.rice@contoso.com,1004,Lead Technician,2012-10-03,2025-09-09,Inactive,Brandon James,brandon.james@contoso.com
+4787505,Edward Ellis,edward.ellis@contoso.com,1003,Technician II,2024-01-16,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4789403,Christian Richardson,christian.richardson@contoso.com,1001,Lead Technician,2014-08-09,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4791929,Ryan Stewart,ryan.stewart@contoso.com,1001,Senior Technician,2020-01-14,2025-04-23,Inactive,Christine Gutierrez,christine.gutierrez@contoso.com
+4792825,Sean Hoffman,sean.hoffman@contoso.com,1002,Technician II,2023-05-01,,Active,Scott Robinson,scott.robinson@contoso.com
+4797405,Mark Hunter,mark.hunter@contoso.com,1006,Technician II,2026-03-01,,Active,Christopher White,christopher.white@contoso.com
+4797862,John Rogers,john.rogers@contoso.com,1001,Senior Technician,2025-08-12,,Active,Larry Williams,larry.williams@contoso.com
+4806330,Jeffrey Evans,jeffrey.evans@contoso.com,1002,Technician I,2025-01-15,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4810404,Frank Griffin,frank.griffin@contoso.com,1001,Technician I,2025-01-07,2026-06-15,Inactive,Christine Gutierrez,christine.gutierrez@contoso.com
+4811878,Gary Gordon,gary.gordon@contoso.com,1002,Apprentice,2026-01-08,,Active,Vincent Garza,vincent.garza@contoso.com
+4813472,Kenneth Rice,kenneth.rice@contoso.com,1001,Technician II,2024-04-01,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4815120,Cody Herrera,cody.herrera@contoso.com,1002,Apprentice,2026-03-12,,Active,Paul Hudson,paul.hudson@contoso.com
+4824074,Travis Bradley,travis.bradley@contoso.com,1002,Senior Technician,2022-01-28,,Active,Paul Hudson,paul.hudson@contoso.com
+4827420,Brandon Tran,brandon.tran@contoso.com,1004,Lead Technician,2010-01-04,,Active,Jacob Green,jacob.green@contoso.com
+4828431,Charles Rice,charles.rice@contoso.com,1002,Technician II,2026-01-19,,Active,Scott Robinson,scott.robinson@contoso.com
+4829372,Russell Ward,russell.ward@contoso.com,1001,Apprentice,2026-01-06,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4831682,Kenneth Hicks,kenneth.hicks@contoso.com,1006,Lead Technician,2010-01-22,,Active,Christopher White,christopher.white@contoso.com
+4835189,Peter Foster,peter.foster@contoso.com,1001,Technician I,2026-04-25,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4835393,Mason Stephens,mason.stephens@contoso.com,1001,Technician II,2023-04-16,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4835978,Carlos Tran,carlos.tran@contoso.com,1003,Lead Technician,2012-03-20,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4845432,Tyler Jimenez,tyler.jimenez@contoso.com,1004,Lead Technician,2012-07-23,2026-11-12,Inactive,Brandon James,brandon.james@contoso.com
+4847577,Garrett Taylor,garrett.taylor@contoso.com,1001,Lead Technician,2012-08-02,2025-09-17,Inactive,Larry Williams,larry.williams@contoso.com
+4847588,Danielle Campbell,danielle.campbell@contoso.com,1004,Lead Technician,2009-08-21,,Active,Brandon James,brandon.james@contoso.com
+4851870,Nathan Watson,nathan.watson@contoso.com,1001,Technician II,2026-01-16,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4852761,Frank Bennett,frank.bennett@contoso.com,1001,Senior Technician,2019-08-21,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4854290,Walter Simpson,walter.simpson@contoso.com,1001,Senior Technician,2017-06-05,,Active,Christine Gutierrez,christine.gutierrez@contoso.com
+4861001,Darnell Wagner,darnell.wagner@contoso.com,1002,Technician I,2026-01-16,,Active,Vincent Garza,vincent.garza@contoso.com
+4862446,Lisa Stewart,lisa.stewart@contoso.com,1001,Technician I,2025-04-03,,Active,Larry Williams,larry.williams@contoso.com
+4863843,Wayne Ellis,wayne.ellis@contoso.com,1001,Senior Technician,2018-02-18,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4872819,Steven Gonzalez,steven.gonzalez@contoso.com,1006,Apprentice,2026-01-05,2026-07-12,Inactive,Christopher White,christopher.white@contoso.com
+4874901,Aaron Washington,aaron.washington@contoso.com,1005,Lead Technician,2012-01-17,2025-11-09,Inactive,Carlos Cox,carlos.cox@contoso.com
+4880483,Raymond Phillips,raymond.phillips@contoso.com,1001,Senior Technician,2020-03-14,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4882224,Hunter Bell,hunter.bell@contoso.com,1006,Lead Technician,2012-05-09,,Active,Christopher White,christopher.white@contoso.com
+4886067,Aaron Allen,aaron.allen@contoso.com,1002,Technician II,2020-12-03,2026-05-25,Inactive,Vincent Garza,vincent.garza@contoso.com
+4895257,Alexander Torres,alexander.torres@contoso.com,1005,Lead Technician,2012-08-24,,Active,Carlos Cox,carlos.cox@contoso.com
+4898379,Ronald Davis,ronald.davis@contoso.com,1002,Lead Technician,2019-04-24,,Active,Paul Hudson,paul.hudson@contoso.com
+4905342,Lawrence Aguilar,lawrence.aguilar@contoso.com,1002,Technician I,2026-01-09,,Active,Vincent Garza,vincent.garza@contoso.com
+4907779,Ken Mendoza,ken.mendoza@contoso.com,1001,Technician II,2021-12-20,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4908647,Adam Crawford,adam.crawford@contoso.com,1004,Apprentice,2026-11-02,,Active,Jacob Green,jacob.green@contoso.com
+4914101,Dan Hughes,dan.hughes@contoso.com,1001,Technician II,2020-03-05,2025-10-12,Inactive,Larry Williams,larry.williams@contoso.com
+4915491,Hector Walker,hector.walker@contoso.com,1001,Senior Technician,2022-11-06,,Active,Brian Gonzales,brian.gonzales@contoso.com
+4917304,Alex Robertson,alex.robertson@contoso.com,1002,Lead Technician,2014-10-19,,Active,Paul Hudson,paul.hudson@contoso.com
+4922309,Kevin Wood,kevin.wood@contoso.com,1003,Technician II,2022-04-21,,Active,Donald Vasquez,donald.vasquez@contoso.com
+4922488,Walter Davis,walter.davis@contoso.com,1002,Lead Technician,2014-05-08,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4924934,Travis Hughes,travis.hughes@contoso.com,1001,Lead Technician,2016-10-13,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4930838,Jacob Stevens,jacob.stevens@contoso.com,1002,Technician II,2026-01-13,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4930981,Mason Hunt,mason.hunt@contoso.com,1002,Lead Technician,2009-02-10,,Active,Scott Robinson,scott.robinson@contoso.com
+4942536,Liam Shaw,liam.shaw@contoso.com,1001,Lead Technician,2017-02-09,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4946693,Rebecca Campbell,rebecca.campbell@contoso.com,1001,Lead Technician,2011-10-07,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4947504,Anthony Carpenter,anthony.carpenter@contoso.com,1004,Technician I,2025-09-10,,Active,Brandon James,brandon.james@contoso.com
+4949952,Jen Jenkins,jen.jenkins@contoso.com,1006,Lead Technician,2009-04-27,,Active,Christopher White,christopher.white@contoso.com
+4963363,Travis Silva,travis.silva@contoso.com,1004,Senior Technician,2017-12-26,,Active,Jacob Green,jacob.green@contoso.com
+4964667,Stephen Arnold,stephen.arnold@contoso.com,1001,Technician I,2025-09-13,,Active,Nicholas Diaz,nicholas.diaz@contoso.com
+4973622,Patrick Davis,patrick.davis@contoso.com,1001,Technician II,2023-08-07,,Active,Wyatt Woods,wyatt.woods@contoso.com
+4974884,Luis Vasquez,luis.vasquez@contoso.com,1001,Apprentice,2026-07-22,,Active,Larry Williams,larry.williams@contoso.com
+4976591,Jose Johnston,jose.johnston@contoso.com,1002,Lead Technician,2016-09-10,,Active,Scott Robinson,scott.robinson@contoso.com
+4976661,Raymond Price,raymond.price@contoso.com,1002,Technician II,2026-01-01,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4983375,David Long,david.long@contoso.com,1002,Technician II,2026-01-16,,Active,Paul Hudson,paul.hudson@contoso.com
+4984431,Donald West,donald.west@contoso.com,1001,Technician I,2025-06-07,,Active,Jose Gonzales,jose.gonzales@contoso.com
+4985000,Gabriel Lopez,gabriel.lopez@contoso.com,1002,Technician II,2026-01-27,,Active,Adam Nguyen,adam.nguyen@contoso.com
+4986822,Darnell Castro,darnell.castro@contoso.com,1001,Lead Technician,2011-01-03,,Active,Jose Gonzales,jose.gonzales@contoso.com

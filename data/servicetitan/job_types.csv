@@ -1,0 +1,24 @@
+JobTypeID,JobTypeName,BusinessUnitID,JobClass
+201,No Cool Diagnostic,1001,Repair
+202,No Heat Diagnostic,1001,Repair
+203,AC Repair,1001,Repair
+204,Furnace Repair,1001,Repair
+205,Heat Pump Repair,1001,Repair
+206,Thermostat Install,1001,Repair
+211,Spring AC Tune-Up,1002,Maintenance
+212,Fall Furnace Tune-Up,1002,Maintenance
+221,AC Replacement,1003,Install
+222,Furnace Replacement,1003,Install
+223,Heat Pump System Install,1003,Install
+224,Ductless Mini-Split Install,1003,Install
+231,Drain Cleaning,1004,Repair
+232,Leak Repair,1004,Repair
+233,Water Heater Repair,1004,Repair
+234,Fixture Repair,1004,Repair
+241,Water Heater Replacement,1005,Install
+242,Tankless Water Heater Install,1005,Install
+243,Whole-Home Repipe,1005,Install
+251,Outlet and Circuit Repair,1006,Repair
+252,Panel Upgrade,1006,Install
+253,EV Charger Install,1006,Install
+254,Generator Install,1006,Install

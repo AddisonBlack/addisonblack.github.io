@@ -1,0 +1,7 @@
+BusinessUnitID,BusinessUnitName,Trade,BusinessUnitType
+1001,HVAC Service,HVAC,Service
+1002,HVAC Maintenance,HVAC,Maintenance
+1003,HVAC Install,HVAC,Install
+1004,Plumbing Service,Plumbing,Service
+1005,Plumbing Install,Plumbing,Install
+1006,Electrical,Electrical,Service and Install
